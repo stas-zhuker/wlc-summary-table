@@ -1,0 +1,5094 @@
+{
+    "WLC: Betzino": {
+        "qa": {
+            "engine": null,
+            "core": "1.8.1",
+            "theme": "1.1.1407",
+            "php": "7.3",
+            "subpath": "betzino_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.4.138",
+            "theme": "1.1.1377",
+            "php": "7.3",
+            "subpath": "betzino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": ""
+        },
+        "title": "WLC: Betzino"
+    },
+    "WLC: Casino-IBC": {
+        "qa": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "casinoibc_qa"
+        },
+        "test": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "casinoibc_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.71",
+            "php": "7.3"
+        },
+        "title": "WLC: Casino-IBC"
+    },
+    "WLC: Devcasino": {
+        "qa": {
+            "engine": "1.3.78-rc.1",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "devcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.78-rc.1",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "devcasino_test"
+        },
+        "prod": {
+            "engine": "1.3.78-rc.1",
+            "core": "1.13.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": "1.4.142",
+            "preprod_engine": "1.3.68",
+            "php": "7.3"
+        },
+        "title": "WLC: Devcasino"
+    },
+    "WLC: Galaxy24hr": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.53",
+            "theme": "1.1.1241",
+            "php": "7.3",
+            "subpath": "galaxy24hr_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.53",
+            "theme": "1.1.1241",
+            "php": "7.3",
+            "subpath": "galaxy24hr_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.51",
+            "preprod_theme": "1.1.1234",
+            "theme": "1.1.1234",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Galaxy24hr"
+    },
+    "WLC: MadMoney": {
+        "qa": {
+            "engine": null,
+            "core": "1.11.0",
+            "theme": "1.1.1413",
+            "php": "7.3",
+            "subpath": "madmoney_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.11.0",
+            "theme": "1.1.1413",
+            "php": "7.3",
+            "subpath": "madmoney_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.11.0",
+            "theme": "1.1.1413",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "WLC: MadMoney"
+    },
+    "WLC: MagicDice": {
+        "qa": {
+            "engine": "git+ssh://git@wlcgitlab.egamings.com:wlc/wlc-engine.git#89e07f012ae33758c6a7c8d0ec8467fffea35fca",
+            "core": "1.4.165",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "magicdice_qa"
+        },
+        "test": {
+            "engine": "git+ssh://git@wlcgitlab.egamings.com:wlc/wlc-engine.git#89e07f012ae33758c6a7c8d0ec8467fffea35fca",
+            "core": "1.4.165",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "magicdice_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "git+ssh://git@wlcgitlab.egamings.com:wlc/wlc-engine.git#79ded062b6f95e97b05fb6c4d43463a2cb2d741a",
+            "core": "1.4.164",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "git+ssh://git@wlcgitlab.egamings.com:wlc/wlc-engine.git#79ded062b6f95e97b05fb6c4d43463a2cb2d741a",
+            "php": "7.3"
+        },
+        "title": "WLC: MagicDice"
+    },
+    "WLC: Magicalcasino": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "magicalcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "magicalcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: Magicalcasino"
+    },
+    "WLC: Yuya Arizono": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "yuyaarizono_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "yuyaarizono_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.9.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: Yuya Arizono"
+    },
+    "WLC: Slotgamber": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1376",
+            "php": "7.3",
+            "subpath": "slotgambler_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1376",
+            "php": "7.3",
+            "subpath": "slotgambler_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.36",
+            "preprod_theme": "1.1.1376",
+            "theme": "1.1.1376",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Slotgamber"
+    },
+    "WLC: Zevcasino": {
+        "qa": {
+            "engine": "1.3.6",
+            "core": "1.4.78",
+            "theme": "1.1.1350",
+            "php": "7.3",
+            "subpath": "zevcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.4.78",
+            "theme": "1.1.1350",
+            "php": "7.3",
+            "subpath": "zevcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.78",
+            "preprod_theme": "1.1.1350",
+            "theme": "1.1.1350",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Zevcasino"
+    },
+    "WLC: WhiteCasino": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "whitecasino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "whitecasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: WhiteCasino"
+    },
+    "TK: 2crazy": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.131",
+            "theme": "1.1.1359",
+            "php": "7.3",
+            "subpath": "2crazy_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.131",
+            "theme": "1.1.1359",
+            "php": "7.3",
+            "subpath": "2crazy_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.131",
+            "preprod_theme": "1.1.1359",
+            "theme": "1.1.1359",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: 2crazy"
+    },
+    "WLC: Mima": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "mima_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "mima_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.4.159",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: Mima"
+    },
+    "WLC: BetBRX": {
+        "qa": {
+            "engine": "1.3.71",
+            "core": "1.4.159",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betbrx_qa"
+        },
+        "test": {
+            "engine": "1.3.71",
+            "core": "1.4.159",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betbrx_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.71",
+            "core": "1.4.159",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.71",
+            "php": "7.3"
+        },
+        "title": "WLC: BetBRX"
+    },
+    "TK: CatCasino": {
+        "qa": {
+            "engine": "1.3.7-5.6",
+            "core": "1.12.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "catcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.7-5.6",
+            "core": "1.12.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "catcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-5.6",
+            "core": "1.12.2",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": "1.5.0",
+            "preprod_engine": "1.3.75-hotfix-334483",
+            "php": "7.3"
+        },
+        "title": "TK: CatCasino"
+    },
+    "WLC: Katushka": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.4.36",
+            "theme": "1.1.1110",
+            "php": "7.3",
+            "subpath": "katushka_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.2.135",
+            "theme": "1.1.1110",
+            "php": "7.3",
+            "subpath": "katushka_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.135",
+            "preprod_theme": "1.1.843",
+            "theme": "1.1.843",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Katushka"
+    },
+    "WLC: MCDice": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.876",
+            "php": "7.3",
+            "subpath": "mcdice_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.876",
+            "php": "7.3",
+            "subpath": "mcdice_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: MCDice"
+    },
+    "SS: Betvamos": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.6",
+            "theme": "1.1.1029",
+            "php": "7.3",
+            "subpath": "betvamos_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.1383",
+            "php": "7.3",
+            "subpath": "betvamos_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: Betvamos"
+    },
+    "WLC: Casinopol": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.12.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "casinopol_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.12.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "casinopol_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Casinopol"
+    },
+    "WLC: GBChip": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1178",
+            "php": "7.3",
+            "subpath": "gbchip_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "gbchip_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.96",
+            "preprod_theme": "1.1.558",
+            "theme": "1.1.558",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: GBChip"
+    },
+    "TK: Bisonbet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.56",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "bisonbet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: Bisonbet"
+    },
+    "WLC: Area51": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "area51_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.876",
+            "php": "7.3",
+            "subpath": "area51_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Area51"
+    },
+    "WLC: Luckypanda": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.11.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "luckypanda_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.11.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "luckypanda_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.11.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: Luckypanda"
+    },
+    "WLC: CSB777": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "csb777_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "csb777_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.70",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.70",
+            "php": "7.3"
+        },
+        "title": "WLC: CSB777"
+    },
+    "TK: Alegrebet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.37",
+            "theme": "1.1.1207",
+            "php": "7.3",
+            "subpath": "alegrebet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.37",
+            "theme": "1.1.1207",
+            "php": "7.3",
+            "subpath": "alegrebet_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: Alegrebet"
+    },
+    "WLC: BeemCasino": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "beemcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: BeemCasino"
+    },
+    "TK: BetPanda": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betpanda_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betpanda_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "TK: BetPanda"
+    },
+    "WLC: Andarbhar": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1235",
+            "php": "7.3",
+            "subpath": "andarbhar_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1235",
+            "php": "7.3",
+            "subpath": "andarbhar_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1235",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "WLC: Andarbhar"
+    },
+    "WLC: Templatecasino": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.10.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "templatecasino_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.10.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "templatecasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Templatecasino"
+    },
+    "WLC: CoinyWin": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.4.138",
+            "theme": "1.1.1377",
+            "php": "7.3",
+            "subpath": "coinywin_qa"
+        },
+        "test": {
+            "engine": "1.3.68",
+            "core": "1.4.138",
+            "theme": "1.1.1377",
+            "php": "7.3",
+            "subpath": "coinywin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.138",
+            "preprod_theme": "1.1.1377",
+            "theme": "1.1.1377",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: CoinyWin"
+    },
+    "WLC: Playwithme": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.4",
+            "theme": "1.1.1210",
+            "php": "7.3",
+            "subpath": "playwithme_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.4.4",
+            "theme": "1.1.1210",
+            "php": "7.3",
+            "subpath": "playwithme_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.4",
+            "preprod_theme": "1.1.1019",
+            "theme": "1.1.1019",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Playwithme"
+    },
+    "WLC: Kavabet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.49",
+            "theme": "1.1.1231",
+            "php": "7.3",
+            "subpath": "kavabet_qa"
+        },
+        "test": {
+            "engine": "1.3.7-6.1",
+            "core": "1.4.49",
+            "theme": "1.1.1231",
+            "php": "7.3",
+            "subpath": "kavabet_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Kavabet"
+    },
+    "TK: Magicbetting": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.6.0-RC.25",
+            "theme": "1.1.1391",
+            "php": "7.3",
+            "subpath": "magicbetting_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.6.0-RC.25",
+            "theme": "1.1.1391",
+            "php": "7.3",
+            "subpath": "magicbetting_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.6.0-RC.25",
+            "theme": "1.1.1391",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "TK: Magicbetting"
+    },
+    "WLC: Dreamsbets": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.4.49",
+            "theme": "1.1.1229",
+            "php": "7.3",
+            "subpath": "dreamsbets_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.49",
+            "theme": "1.1.1229",
+            "php": "7.3",
+            "subpath": "dreamsbets_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.4",
+            "preprod_theme": "1.1.1186",
+            "theme": "1.1.1186",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Dreamsbets"
+    },
+    "SS: SafariCasino": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "safaricasino_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "safaricasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.73",
+            "php": "7.3"
+        },
+        "title": "SS: SafariCasino"
+    },
+    "WLC: Crazybet": {
+        "qa": {
+            "engine": "1.3.7-5.5",
+            "core": "1.4.123",
+            "theme": "1.1.1362",
+            "php": "7.3",
+            "subpath": "crazybet_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.123",
+            "theme": "1.1.1362",
+            "php": "7.3",
+            "subpath": "crazybet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.123",
+            "theme": "1.1.1362",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "WLC: Crazybet"
+    },
+    "WLC: Betitall": {
+        "qa": {
+            "engine": null,
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betitall_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betitall_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.12.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: Betitall"
+    },
+    "WLC: GXGBet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "gxgbet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "gxgbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: GXGBet"
+    },
+    "WLC: BitBet24": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.42",
+            "theme": "1.1.1214",
+            "php": "7.3",
+            "subpath": "bitbet24_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.42",
+            "theme": "1.1.1214",
+            "php": "7.3",
+            "subpath": "bitbet24_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.42",
+            "preprod_theme": "1.1.1214",
+            "theme": "1.1.1214",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: BitBet24"
+    },
+    "TK: BitCoza": {
+        "qa": {
+            "engine": "1.3.6",
+            "core": "1.4.104",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bitcoza_qa"
+        },
+        "test": {
+            "engine": "1.3.6",
+            "core": "1.4.104",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bitcoza_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.6",
+            "core": "1.4.104",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.6",
+            "php": "7.3"
+        },
+        "title": "TK: BitCoza"
+    },
+    "TK: Mglpoker": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.53",
+            "theme": "1.1.1241",
+            "php": "7.3",
+            "subpath": "mglpoker_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "mglpoker_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.80",
+            "preprod_theme": "1.1.446",
+            "theme": "1.1.446",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Mglpoker"
+    },
+    "WLC: BitBets": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.579",
+            "php": "7.3",
+            "subpath": "bitbets_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.579",
+            "php": "7.3",
+            "subpath": "bitbets_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: BitBets"
+    },
+    "WLC: AbcFortunazone": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.55",
+            "theme": "1.1.1251",
+            "php": "7.3",
+            "subpath": "abcfortunazone_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.55",
+            "theme": "1.1.1251",
+            "php": "7.3",
+            "subpath": "abcfortunazone_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: AbcFortunazone"
+    },
+    "TK: Orientalbet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "orientalbet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "orientalbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "TK: Orientalbet"
+    },
+    "WLC: HoldnSpin": {
+        "qa": {
+            "engine": "1.3.57",
+            "core": "1.4.124",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "holdnspin_qa"
+        },
+        "test": {
+            "engine": "1.3.57",
+            "core": "1.4.124",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "holdnspin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.57",
+            "core": "1.4.124",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.57",
+            "php": "7.3"
+        },
+        "title": "WLC: HoldnSpin"
+    },
+    "TK: GodBunny": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.4.150",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "godbunny_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.150",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "godbunny_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.4.150",
+            "theme": null,
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "TK: GodBunny"
+    },
+    "TK: BiamoBet": {
+        "qa": {
+            "engine": "1.3.7-6.1",
+            "core": "1.11.0-RC.55",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "biamobet_qa"
+        },
+        "test": {
+            "engine": "1.3.7-6.1",
+            "core": "1.11.0-RC.55",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "biamobet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-6.1",
+            "core": "1.11.0-RC.55",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.7-6.1",
+            "php": "7.3"
+        },
+        "title": "TK: BiamoBet"
+    },
+    "WLC: ClubRichescis": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "clubrichescis_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "clubrichescis_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: ClubRichescis"
+    },
+    "WLC: Foggystar": {
+        "qa": {
+            "engine": "1.3.7-7.1",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "foggystar_qa"
+        },
+        "test": {
+            "engine": "1.3.7-7.1",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "foggystar_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-7.1",
+            "core": "1.13.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.7-7.1",
+            "php": "7.3"
+        },
+        "title": "WLC: Foggystar"
+    },
+    "TK: Casibom": {
+        "qa": {
+            "engine": "1.3.7-6.1",
+            "core": "1.4.166-RC.19",
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "casibom_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.166-RC.19",
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "casibom_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.166-RC.19",
+            "preprod_theme": "1.1.1399",
+            "theme": "1.1.1403",
+            "il_live": false,
+            "preprod_core": "1.4.166-RC.19",
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Casibom"
+    },
+    "WLC: Deuscasino": {
+        "qa": {
+            "engine": "1.3.69",
+            "core": "1.8.1",
+            "theme": "1.1.1407",
+            "php": "7.3",
+            "subpath": "deuscasino_qa"
+        },
+        "test": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "theme": "1.1.1407",
+            "php": "7.3",
+            "subpath": "deuscasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.8.1",
+            "theme": "1.1.1407",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "WLC: Deuscasino"
+    },
+    "WLC: GoodyBet": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.4.49",
+            "theme": "1.1.1229",
+            "php": "7.3",
+            "subpath": "goodybet_qa"
+        },
+        "test": {
+            "engine": "1.3.57",
+            "core": "1.4.49",
+            "theme": "1.1.1229",
+            "php": "7.3",
+            "subpath": "goodybet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.35",
+            "preprod_theme": "1.1.1180",
+            "theme": "1.1.1180",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: GoodyBet"
+    },
+    "WLC: LollyBet": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.13.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "lollybet_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.13.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "lollybet_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: LollyBet"
+    },
+    "WLC: Planetspin": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.85",
+            "theme": "1.1.1331",
+            "php": "7.3",
+            "subpath": "planetspin_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.85",
+            "theme": "1.1.1331",
+            "php": "7.3",
+            "subpath": "planetspin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.49",
+            "preprod_theme": "1.1.1231",
+            "theme": "1.1.1231",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Planetspin"
+    },
+    "WLC: Luckybet365": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.80",
+            "theme": "1.1.1280",
+            "php": "7.3",
+            "subpath": "luckybet365_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.80",
+            "theme": "1.1.1280",
+            "php": "7.3",
+            "subpath": "luckybet365_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.80",
+            "preprod_theme": "1.1.1280",
+            "theme": "1.1.1280",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Luckybet365"
+    },
+    "WLC: Winnbet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "winnbet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "winnbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1256",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "WLC: Winnbet"
+    },
+    "WLC: Haitiwin": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.156",
+            "theme": "1.1.1392",
+            "php": "7.3",
+            "subpath": "haitiwin_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.156",
+            "theme": "1.1.1392",
+            "php": "7.3",
+            "subpath": "haitiwin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.156",
+            "preprod_theme": "1.1.1356",
+            "theme": "1.1.1392",
+            "il_live": false,
+            "preprod_core": "1.4.150",
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Haitiwin"
+    },
+    "TK: TipTop": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.132",
+            "theme": "1.1.1412",
+            "php": "7.3",
+            "subpath": "tiptop_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.132",
+            "theme": "1.1.1412",
+            "php": "7.3",
+            "subpath": "tiptop_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.132",
+            "theme": "1.1.1402",
+            "il_live": false,
+            "php": "7.2"
+        },
+        "title": "TK: TipTop"
+    },
+    "WLC: RimWin": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "rimwin_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "rimwin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: RimWin"
+    },
+    "WLC: Betcoco": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.12.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betcoco_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.12.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betcoco_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Betcoco"
+    },
+    "WLC: LadySlot": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.876",
+            "php": "7.3",
+            "subpath": "ladyslot_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.876",
+            "php": "7.3",
+            "subpath": "ladyslot_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: LadySlot"
+    },
+    "WLC: Savarona": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.6.0",
+            "theme": "1.1.1405",
+            "php": "7.3",
+            "subpath": "savarona_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.6.0",
+            "theme": "1.1.1405",
+            "php": "7.3",
+            "subpath": "savarona_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.6.0",
+            "preprod_theme": "1.1.1405",
+            "theme": "1.1.1405",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: Savarona"
+    },
+    "TK: Karibubet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.5.0",
+            "theme": "1.1.1412",
+            "php": "7.3",
+            "subpath": "karibubet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.5.0",
+            "theme": "1.1.1412",
+            "php": "7.3",
+            "subpath": "karibubet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.5.0",
+            "theme": "1.1.1412",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "TK: Karibubet"
+    },
+    "WLC: GoldTime": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1157",
+            "php": "7.3",
+            "subpath": "goldtime_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.3.2",
+            "theme": "1.1.873",
+            "php": "7.3",
+            "subpath": "goldtime_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: GoldTime"
+    },
+    "WLC: CasinoCopa": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "theme": "1.1.1404",
+            "php": "7.3",
+            "subpath": "casinocopa_qa"
+        },
+        "test": {
+            "engine": "1.2.4",
+            "core": "1.5.1",
+            "theme": "1.1.1404",
+            "php": "7.3",
+            "subpath": "casinocopa_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.5.1",
+            "preprod_theme": "1.1.1404",
+            "theme": "1.1.1404",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: CasinoCopa"
+    },
+    "WLC: Betstore365": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.82",
+            "theme": "1.1.1410",
+            "php": "7.3",
+            "subpath": "betstore365_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.82",
+            "theme": "1.1.1410",
+            "php": "7.3",
+            "subpath": "betstore365_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.82",
+            "preprod_theme": "1.1.1410",
+            "theme": "1.1.1410",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Betstore365"
+    },
+    "WLC: Zetplanet": {
+        "qa": {
+            "engine": null,
+            "core": "1.14.0-RC.68",
+            "theme": "1.1.1406",
+            "php": "7.3",
+            "subpath": "zetplanet_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.14.0-RC.68",
+            "theme": "1.1.1406",
+            "php": "7.3",
+            "subpath": "zetplanet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.14.0-RC.68",
+            "preprod_theme": "1.1.1406",
+            "theme": "1.1.1406",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Zetplanet"
+    },
+    "TK: BunnyCasino": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bunnycasino_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bunnycasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "TK: BunnyCasino"
+    },
+    "TK: Jinbo520": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": null,
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "jinbo520_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.1392",
+            "php": "7.3",
+            "subpath": "jinbo520_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: Jinbo520"
+    },
+    "WLC: WildWildbet": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.4.152",
+            "theme": "1.1.1176",
+            "php": "7.3",
+            "subpath": "wildwildbet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: WildWildbet"
+    },
+    "TK: Vipcasino": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.164",
+            "theme": "1.1.1406",
+            "php": "7.3",
+            "subpath": "vipcasino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.135",
+            "theme": "1.1.1382",
+            "il_live": false,
+            "php": "7.2"
+        },
+        "title": "TK: Vipcasino"
+    },
+    "WLC: PuppyCasino": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "puppycasino_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "puppycasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.6.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: PuppyCasino"
+    },
+    "WLC: Cvargentina": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.4.82",
+            "theme": "1.1.1282",
+            "php": "7.3",
+            "subpath": "cvargentina_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.82",
+            "theme": "1.1.1282",
+            "php": "7.3",
+            "subpath": "cvargentina_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.82",
+            "preprod_theme": "1.1.1282",
+            "theme": "1.1.1282",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Cvargentina"
+    },
+    "TK: ClubRiches": {
+        "qa": {
+            "engine": "1.3.7-4.4",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "clubriches_qa"
+        },
+        "test": {
+            "engine": "1.3.7-4.4",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "clubriches_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-4.4",
+            "core": "1.6.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": "1.6.0",
+            "preprod_engine": "1.3.7-4.4",
+            "php": "7.3"
+        },
+        "title": "TK: ClubRiches"
+    },
+    "TK: 520520jb": {
+        "qa": {
+            "engine": "1.3.7-6.3",
+            "core": "1.11.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "520520jb_qa"
+        },
+        "test": {
+            "engine": "1.3.7-6.3",
+            "core": "1.11.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "520520jb_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: 520520jb"
+    },
+    "WLC: ViperSpin": {
+        "qa": {
+            "engine": "1.3.7-5.5",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "viperspin_qa"
+        },
+        "test": {
+            "engine": "1.3.7-5.5",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "viperspin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-5.5",
+            "core": "1.6.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.7-5.5",
+            "php": "7.3"
+        },
+        "title": "WLC: ViperSpin"
+    },
+    "WLC: EngineSportsbooks": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": "1.3.78-rc.1",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "enginesportsbooks_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: EngineSportsbooks"
+    },
+    "WLC: Rostbet": {
+        "qa": {
+            "engine": "1.3.69",
+            "core": "1.4.158",
+            "theme": "1.1.1396",
+            "php": "7.3",
+            "subpath": "rostbet_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.4.158",
+            "theme": "1.1.1396",
+            "php": "7.3",
+            "subpath": "rostbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.158",
+            "preprod_theme": "1.1.1396",
+            "theme": "1.1.1396",
+            "il_live": false,
+            "preprod_core": "1.4.158",
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Rostbet"
+    },
+    "WLC: Cassinobit": {
+        "qa": {
+            "engine": "1.2.4",
+            "core": "1.4.36",
+            "theme": "1.1.970",
+            "php": "7.3",
+            "subpath": "cassinobit_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.2.135",
+            "theme": "1.1.970",
+            "php": "7.3",
+            "subpath": "cassinobit_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.135",
+            "preprod_theme": "1.1.856",
+            "theme": "1.1.856",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Cassinobit"
+    },
+    "TK: GMarket": {
+        "qa": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "gmarket_qa"
+        },
+        "test": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "gmarket_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.71",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.71",
+            "php": "7.3"
+        },
+        "title": "TK: GMarket"
+    },
+    "WLC: CoinGames": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "coingames_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "coingames_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: CoinGames"
+    },
+    "WLC: Caruso365": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.49",
+            "theme": "1.1.1229",
+            "php": "7.4",
+            "subpath": "caruso365_qa"
+        },
+        "test": {
+            "engine": "1.3.7-5.5",
+            "core": "1.4.49",
+            "theme": "1.1.1229",
+            "php": "7.3",
+            "subpath": "caruso365_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.17",
+            "preprod_theme": "1.1.1108",
+            "theme": "1.1.1108",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Caruso365"
+    },
+    "WLC: X-Time": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "xtime_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "xtime_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: X-Time"
+    },
+    "WLC: RoyaleClub": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.4.109",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "royaleclub_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.109",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "royaleclub_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.2.1",
+            "core": "1.4.97",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.2.1",
+            "php": "7.3"
+        },
+        "title": "WLC: RoyaleClub"
+    },
+    "WLC: Callbet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1176",
+            "php": "7.3",
+            "subpath": "callbet_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.33",
+            "theme": "1.1.1176",
+            "php": "7.3",
+            "subpath": "callbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.33",
+            "preprod_theme": "1.1.1176",
+            "theme": "1.1.1176",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: Callbet"
+    },
+    "WLC: Casoo": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.5.1-RC.23",
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "casoo_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.5.1-RC.23",
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "casoo_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.5.1-RC.23",
+            "preprod_theme": "1.1.1403",
+            "theme": "1.1.1403",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: Casoo"
+    },
+    "TK: Betflix365": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.4.151",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betflix365_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.151",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betflix365_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.70",
+            "core": "1.4.151",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.70",
+            "php": "7.3"
+        },
+        "title": "TK: Betflix365"
+    },
+    "TK: Casinoavion": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.4.159",
+            "theme": "1.1.1397",
+            "php": "7.3",
+            "subpath": "casinoavion_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.159",
+            "theme": "1.1.1397",
+            "php": "7.3",
+            "subpath": "casinoavion_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.159",
+            "theme": "1.1.1397",
+            "il_live": false,
+            "php": "7.2"
+        },
+        "title": "TK: Casinoavion"
+    },
+    "WLC: Cobet24": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.80",
+            "theme": "1.1.1281",
+            "php": "7.3",
+            "subpath": "cobet24_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.80",
+            "theme": "1.1.1281",
+            "php": "7.3",
+            "subpath": "cobet24_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.80",
+            "preprod_theme": "1.1.1281",
+            "theme": "1.1.1281",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Cobet24"
+    },
+    "WLC: MrDice": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "mrdice_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "mrdice_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: MrDice"
+    },
+    "TK: AdelCasino": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "adelcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "adelcasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: AdelCasino"
+    },
+    "TK: Mcrossb": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1168",
+            "php": "7.3",
+            "subpath": "mcrossb_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.29",
+            "theme": "1.1.1168",
+            "php": "7.3",
+            "subpath": "mcrossb_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: Mcrossb"
+    },
+    "TK: AngelGames": {
+        "qa": {
+            "engine": "1.3.71",
+            "core": "1.4.153",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "angelgames_qa"
+        },
+        "test": {
+            "engine": "1.3.71",
+            "core": "1.4.153",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "angelgames_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.71",
+            "core": "1.4.153",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.71",
+            "php": "7.3"
+        },
+        "title": "TK: AngelGames"
+    },
+    "WLC: GoldenAces": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "goldenaces_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "goldenaces_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: GoldenAces"
+    },
+    "SS: Greengamez": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: Greengamez"
+    },
+    "WLC: Pokies2go": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.166-RC.19",
+            "theme": "1.1.1413",
+            "php": "7.3",
+            "subpath": "pokies2go_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.166-RC.19",
+            "theme": "1.1.1413",
+            "php": "7.3",
+            "subpath": "pokies2go_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.166-RC.19",
+            "preprod_theme": "1.1.1411",
+            "theme": "1.1.1411",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Pokies2go"
+    },
+    "TK: Edjowa": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.837",
+            "php": "7.3",
+            "subpath": "edjowa_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.837",
+            "php": "7.3",
+            "subpath": "edjowa_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.129",
+            "preprod_theme": "1.1.810",
+            "theme": "1.1.810",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Edjowa"
+    },
+    "WLC: Bestchance": {
+        "qa": {
+            "engine": "1.3.49",
+            "core": "1.4.100",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bestchance_qa"
+        },
+        "test": {
+            "engine": "1.3.49",
+            "core": "1.4.100",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bestchance_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.49",
+            "core": "1.4.100",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.49",
+            "php": "7.3"
+        },
+        "title": "WLC: Bestchance"
+    },
+    "WLC: Fortusino": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.111",
+            "theme": "1.1.1355",
+            "php": "7.3",
+            "subpath": "fortusino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.111",
+            "theme": "1.1.1355",
+            "php": "7.3",
+            "subpath": "fortusino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.111",
+            "theme": "1.1.1355",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "WLC: Fortusino"
+    },
+    "WLC: DareCasino": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "darecasino_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "darecasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: DareCasino"
+    },
+    "WLC: 24kcasino": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.6.0",
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "24kcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.7-6.1",
+            "core": "1.6.0",
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "24kcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.6.0",
+            "preprod_theme": "1.1.1405",
+            "theme": "1.1.1405",
+            "il_live": false,
+            "preprod_core": "1.6.0",
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: 24kcasino"
+    },
+    "WLC: PlayVino": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.32",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "vino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.84",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: PlayVino"
+    },
+    "TK: Goldenholic": {
+        "qa": {
+            "engine": null,
+            "core": "1.12.1",
+            "theme": "1.1.1415",
+            "php": "7.3",
+            "subpath": "goldenholic_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.12.1",
+            "theme": "1.1.1415",
+            "php": "7.3",
+            "subpath": "goldenholic_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.12.1",
+            "theme": "1.1.1415",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "TK: Goldenholic"
+    },
+    "WLC: StarBetPro": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "starbetpro_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "starbetpro_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": null,
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: StarBetPro"
+    },
+    "WLC: TrebolPlay": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "trebolplay_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "trebolplay_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: TrebolPlay"
+    },
+    "WLC: Kentbahis": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.66",
+            "theme": "1.1.1267",
+            "php": "7.3",
+            "subpath": "kentbahis_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.4.66",
+            "theme": "1.1.1267",
+            "php": "7.3",
+            "subpath": "kentbahis_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.66",
+            "preprod_theme": "1.1.1267",
+            "theme": "1.1.1267",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Kentbahis"
+    },
+    "TK: Fogobet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.151",
+            "theme": "1.1.1398",
+            "php": "7.3",
+            "subpath": "fogobet_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.151",
+            "theme": "1.1.1398",
+            "php": "7.3",
+            "subpath": "fogobet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.151",
+            "theme": "1.1.1398",
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "TK: Fogobet"
+    },
+    "WLC: StarWinnersCasino": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.4.36",
+            "theme": "1.1.1114",
+            "php": "7.3",
+            "subpath": "starwinnerscasino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: StarWinnersCasino"
+    },
+    "WLC: LuckyGame": {
+        "qa": {
+            "engine": "1.3.71",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "luckygame_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: LuckyGame"
+    },
+    "WLC: Kingscasino": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.104",
+            "theme": "1.1.1329",
+            "php": "7.3",
+            "subpath": "kingscasino_qa"
+        },
+        "test": {
+            "engine": "1.3.77-rc.3",
+            "core": "1.4.104",
+            "theme": "1.1.1322",
+            "php": "7.3",
+            "subpath": "kingscasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.104",
+            "preprod_theme": "1.1.1329",
+            "theme": "1.1.1329",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Kingscasino"
+    },
+    "SS: Campeonbet": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.109",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "campeonbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.109",
+            "theme": null,
+            "il_live": false,
+            "php": "7.2"
+        },
+        "title": "SS: Campeonbet"
+    },
+    "WLC: OnikaBet": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.4.152",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "onikabet_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.4.152",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "onikabet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.4.152",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.73",
+            "php": "7.3"
+        },
+        "title": "WLC: OnikaBet"
+    },
+    "WLC: Maxcasino": {
+        "qa": {
+            "engine": null,
+            "core": "1.6.0",
+            "theme": "1.1.1404",
+            "php": "7.3",
+            "subpath": "maxcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.6.0",
+            "theme": "1.1.1404",
+            "php": "7.3",
+            "subpath": "maxcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.6.0",
+            "preprod_theme": "1.1.1404",
+            "theme": "1.1.1404",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Maxcasino"
+    },
+    "WLC: Betozino": {
+        "qa": {
+            "engine": null,
+            "core": "1.3.2",
+            "theme": "1.1.906",
+            "php": "7.3",
+            "subpath": "betozino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.3.2",
+            "theme": "1.1.906",
+            "php": "7.3",
+            "subpath": "betozino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.3.2",
+            "preprod_theme": "1.1.906",
+            "theme": "1.1.906",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Betozino"
+    },
+    "WLC: EdenOdds": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1157",
+            "php": "7.3",
+            "subpath": "edenodds_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "edenodds_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: EdenOdds"
+    },
+    "TK: Cashinoroyale": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1269",
+            "php": "7.3",
+            "subpath": "cashinoroyale_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.4.51",
+            "theme": "1.1.1269",
+            "php": "7.3",
+            "subpath": "cashinoroyale_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.51",
+            "preprod_theme": "1.1.1269",
+            "theme": "1.1.1269",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Cashinoroyale"
+    },
+    "TK: 377bet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.33",
+            "theme": "1.1.836",
+            "php": "7.3",
+            "subpath": "377bet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.33",
+            "theme": "1.1.836",
+            "php": "7.3",
+            "subpath": "377bet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.91",
+            "preprod_theme": "1.1.720",
+            "theme": "1.1.720",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: 377bet"
+    },
+    "WLC: Cupcasino": {
+        "qa": {
+            "engine": "1.3.68",
+            "core": "1.4.144",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "cupcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.68",
+            "core": "1.4.144",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "cupcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.66",
+            "core": "1.4.137",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.66",
+            "php": "7.3"
+        },
+        "title": "WLC: Cupcasino"
+    },
+    "WLC: 007casino": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "007casino_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "007casino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: 007casino"
+    },
+    "WLC: Midnightcasino": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.11.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "midnightcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.11.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "midnightcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.77",
+            "core": "1.11.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.77",
+            "php": "7.3"
+        },
+        "title": "WLC: Midnightcasino"
+    },
+    "TK: ArcadeLara": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.13.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "arcadelara_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.13.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "arcadelara_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.13.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "TK: ArcadeLara"
+    },
+    "WLC: Hulaspin": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.4.145",
+            "theme": "1.1.1384",
+            "php": "7.3",
+            "subpath": "hulaspin_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.4.145",
+            "theme": "1.1.1384",
+            "php": "7.3",
+            "subpath": "hulaspin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.145",
+            "preprod_theme": "1.1.1384",
+            "theme": "1.1.1384",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Hulaspin"
+    },
+    "TK: Beteurosport": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.9.0",
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "beteurosport_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.9.0",
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "beteurosport_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.9.0",
+            "preprod_theme": "1.1.1411",
+            "theme": "1.1.1411",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Beteurosport"
+    },
+    "WLC: SpotGaming": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.4.159",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "spotgaming_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.159",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "spotgaming_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.70",
+            "core": "1.4.159",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.70",
+            "php": "7.3"
+        },
+        "title": "WLC: SpotGaming"
+    },
+    "WLC: VikingBet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "vikingbet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "vikingbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: VikingBet"
+    },
+    "SS: Pledoo": {
+        "qa": {
+            "engine": "1.3.69",
+            "core": "1.7.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "pledoo_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.7.2",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "pledoo_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.7.2",
+            "theme": null,
+            "il_live": false,
+            "php": "7.3"
+        },
+        "title": "SS: Pledoo"
+    },
+    "WLC: Coinbar": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1157",
+            "php": "7.3",
+            "subpath": "coinbar_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.25",
+            "theme": "1.1.1157",
+            "php": "7.3",
+            "subpath": "coinbar_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.128",
+            "preprod_theme": "1.1.786",
+            "theme": "1.1.786",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Coinbar"
+    },
+    "WLC: Stakeson": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "stakeson_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "stakeson_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: Stakeson"
+    },
+    "WLC: BenSLot": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.4.156",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "benslot_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.156",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "benslot_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.70",
+            "core": "1.4.156",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.70",
+            "php": "7.3"
+        },
+        "title": "WLC: BenSLot"
+    },
+    "WLC: Alexandra": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.80",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "alexandra_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.80",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "alexandra_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.80",
+            "preprod_theme": "1.1.1256",
+            "theme": "1.1.1256",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Alexandra"
+    },
+    "TK: Betswiss": {
+        "qa": {
+            "engine": null,
+            "core": "1.9.0",
+            "theme": "1.1.1412",
+            "php": "7.3",
+            "subpath": "betswiss_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.9.0",
+            "theme": "1.1.1412",
+            "php": "7.3",
+            "subpath": "betswiss_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.9.0",
+            "preprod_theme": "1.1.1412",
+            "theme": "1.1.1412",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Betswiss"
+    },
+    "SS: SonsOfSlots": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.109",
+            "theme": "1.1.868",
+            "php": "7.3",
+            "subpath": "sonsofslots_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.109",
+            "theme": "1.1.868",
+            "il_live": false,
+            "php": "7.2"
+        },
+        "title": "SS: SonsOfSlots"
+    },
+    "WLC: Gluckbet": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.98",
+            "theme": "1.1.1294",
+            "php": "7.3",
+            "subpath": "gluckbet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.98",
+            "theme": "1.1.1294",
+            "php": "7.3",
+            "subpath": "gluckbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.98",
+            "preprod_theme": "1.1.1294",
+            "theme": "1.1.1294",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Gluckbet"
+    },
+    "WLC: CaratSlots": {
+        "qa": {
+            "engine": "1.3.74",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "caratslots_qa"
+        },
+        "test": {
+            "engine": "1.3.74",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "caratslots_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.74",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.74",
+            "php": "7.3"
+        },
+        "title": "WLC: CaratSlots"
+    },
+    "WLC: Mybet365": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.113",
+            "theme": "1.1.1349",
+            "php": "7.3",
+            "subpath": "mybet365_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.113",
+            "theme": "1.1.1349",
+            "php": "7.3",
+            "subpath": "mybet365_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.113",
+            "preprod_theme": "1.1.1349",
+            "theme": "1.1.1349",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Mybet365"
+    },
+    "WLC: RimCasino": {
+        "qa": {
+            "engine": "1.2.4",
+            "core": "1.4.97",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "rimcasino_qa"
+        },
+        "test": {
+            "engine": "1.2.4",
+            "core": "1.4.97",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "rimcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.0.11",
+            "core": "1.4.86",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.0.11",
+            "php": "7.3"
+        },
+        "title": "WLC: RimCasino"
+    },
+    "WLC: Diceheroe": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.4.165",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "diceheroe_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.4.165",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "diceheroe_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.4.165",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: Diceheroe"
+    },
+    "WLC: NewGarden": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "newgarden_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "newgarden_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: NewGarden"
+    },
+    "WLC: Poolsino": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "poolsino_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "poolsino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.73",
+            "php": "7.3"
+        },
+        "title": "WLC: Poolsino"
+    },
+    "TK: Better2play": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.144",
+            "theme": "1.1.1383",
+            "php": "7.3",
+            "subpath": "better2play_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.144",
+            "theme": "1.1.1383",
+            "php": "7.3",
+            "subpath": "better2play_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.108",
+            "preprod_theme": "1.1.1335",
+            "theme": "1.1.1335",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "TK: Better2play"
+    },
+    "SS: LuckyboyCasino": {
+        "qa": {
+            "engine": "1.3.15",
+            "core": "1.4.108",
+            "theme": null,
+            "php": null,
+            "subpath": "luckyboycasino_qa"
+        },
+        "test": {
+            "engine": "1.3.15",
+            "core": "1.4.108",
+            "theme": null,
+            "php": null,
+            "subpath": "luckyboycasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: LuckyboyCasino"
+    },
+    "WLC: Timetobet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "timetobet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "timetobet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: Timetobet"
+    },
+    "SS: EscaleraReal": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "escalerareal_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "escalerareal_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: EscaleraReal"
+    },
+    "WLC: BetConda": {
+        "qa": {
+            "engine": "1.3.68",
+            "core": "1.4.144",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betconda_qa"
+        },
+        "test": {
+            "engine": "1.3.68",
+            "core": "1.4.144",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betconda_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: BetConda"
+    },
+    "WLC: WomBet": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "wombet_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "wombet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.9.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: WomBet"
+    },
+    "WLC: APFcasino": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.4.88",
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "apfcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.4.88",
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "apfcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.88",
+            "preprod_theme": "1.1.1236",
+            "theme": "1.1.1236",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: APFcasino"
+    },
+    "WLC: Casinoprizma": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1259",
+            "php": "7.3",
+            "subpath": "casinoprizma_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1259",
+            "php": "7.3",
+            "subpath": "casinoprizma_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.36",
+            "preprod_theme": "1.1.887",
+            "theme": "1.1.887",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Casinoprizma"
+    },
+    "WLC: TheBigWin": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "thebigwin_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "thebigwin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.51",
+            "preprod_theme": "1.1.1236",
+            "theme": "1.1.1236",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: TheBigWin"
+    },
+    "WLC: Midas24": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.899",
+            "php": "7.3",
+            "subpath": "midas24_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.899",
+            "php": "7.3",
+            "subpath": "midas24_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.3.2",
+            "preprod_theme": "1.1.891",
+            "theme": "1.1.891",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Midas24"
+    },
+    "WLC: Betpat": {
+        "qa": {
+            "engine": null,
+            "core": "1.5.1",
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "betpat_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "theme": "1.1.1403",
+            "php": "7.3",
+            "subpath": "betpat_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.122",
+            "preprod_theme": "1.1.1358",
+            "theme": "1.1.1358",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Betpat"
+    },
+    "TK: BetFlex": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.156",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betflex_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.4.156",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betflex_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-0.11",
+            "core": "1.4.156",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": "1.4.156",
+            "preprod_engine": "1.3.7-0.6",
+            "php": "7.3"
+        },
+        "title": "TK: BetFlex"
+    },
+    "WLC: Luckycrypto": {
+        "qa": {
+            "engine": "1.3.7-6.1",
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "luckycrypto_qa"
+        },
+        "test": {
+            "engine": "1.3.7-6.1",
+            "core": "1.9.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "luckycrypto_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.7-6.1",
+            "core": "1.9.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.7-6.1",
+            "php": "7.3"
+        },
+        "title": "WLC: Luckycrypto"
+    },
+    "WLC: 4xBet": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "4xbet_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "4xbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: 4xBet"
+    },
+    "SS: NP2": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "np2_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": null,
+            "theme": "1.1.1210",
+            "php": "7.3",
+            "subpath": "np2_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: NP2"
+    },
+    "WLC: Skurkcasino": {
+        "qa": {
+            "engine": "0.2.83",
+            "core": "1.4.56",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "skurkcasino_qa"
+        },
+        "test": {
+            "engine": "0.2.83",
+            "core": "1.4.56",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "skurkcasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Skurkcasino"
+    },
+    "WLC: ShowLion": {
+        "qa": {
+            "engine": null,
+            "core": "1.2.124",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "showlion_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.2.124",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "showlion_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": "1.2.135",
+            "theme": null,
+            "il_live": false,
+            "php": "7.2"
+        },
+        "title": "WLC: ShowLion"
+    },
+    "TK: Jackpotcrypto": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.159",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "jackpotcrypto_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.4.159",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "jackpotcrypto_test"
+        },
+        "il_live": true,
+        "prod": {
+            "engine": "1.3.70",
+            "core": "1.4.159",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": true,
+            "preprod_core": null,
+            "preprod_engine": "1.3.70",
+            "php": "7.3"
+        },
+        "title": "TK: Jackpotcrypto"
+    },
+    "WLC: JackpotCasino Live": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.14.0-RC.68",
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "jpclive_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.14.0-RC.68",
+            "theme": "1.1.1411",
+            "php": "7.3",
+            "subpath": "jpclive_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": "1.13.1",
+            "preprod_theme": "1.1.1411",
+            "theme": "1.1.1411",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: JackpotCasino Live"
+    },
+    "WLC: Triumphbet": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "triumphbet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": null,
+            "theme": "1.1.1269",
+            "php": "7.3",
+            "subpath": "triumphbet_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Triumphbet"
+    },
+    "WLC: GoldBaller": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.1157",
+            "php": "7.3",
+            "subpath": "goldballer_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": null,
+            "theme": "1.1.1110",
+            "php": "7.3",
+            "subpath": "goldballer_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: GoldBaller"
+    },
+    "TK: QuoraBet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "quorabet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "quorabet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.5.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "TK: QuoraBet"
+    },
+    "WLC: PSports247": {
+        "qa": {
+            "engine": "1.3.70",
+            "core": "1.4.146",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "psports247_qa"
+        },
+        "test": {
+            "engine": "1.3.70",
+            "core": "1.4.146",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "psports247_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.70",
+            "core": "1.4.146",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.70",
+            "php": "7.3"
+        },
+        "title": "WLC: PSports247"
+    },
+    "SS: SimSimCasino": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "simsimcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "simsimcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.73",
+            "php": "7.3"
+        },
+        "title": "SS: SimSimCasino"
+    },
+    "WLC: Bitzerian": {
+        "qa": {
+            "engine": null,
+            "core": "1.7.0",
+            "theme": "1.1.1406",
+            "php": "7.3",
+            "subpath": "bitzerian_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.7.0",
+            "theme": "1.1.1406",
+            "php": "7.3",
+            "subpath": "bitzerian_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": null,
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Bitzerian"
+    },
+    "WLC: Ugobet": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.136",
+            "theme": "1.1.1376",
+            "php": "7.3",
+            "subpath": "ugobet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.136",
+            "theme": "1.1.1376",
+            "php": "7.3",
+            "subpath": "ugobet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.136",
+            "preprod_theme": "1.1.1376",
+            "theme": "1.1.1376",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Ugobet"
+    },
+    "WLC: Wcasino": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "wcasino_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "wcasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": null,
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Wcasino"
+    },
+    "WLC: Vipclub": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.3.2",
+            "theme": "1.1.1294",
+            "php": "7.3",
+            "subpath": "vipclub_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.3.2",
+            "theme": "1.1.1294",
+            "php": "7.3",
+            "subpath": "vipclub_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.3.2",
+            "preprod_theme": "1.1.1216",
+            "theme": "1.1.1216",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Vipclub"
+    },
+    "TK: Bet2uClub": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.13.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bet2uclub_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.13.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bet2uclub_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.6.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": "1.4.165",
+            "preprod_engine": "git+ssh://git@wlcgitlab.egamings.com:wlc/wlc-engine.git#b242fd4cb52495a4f4c63e403014fa78910897fe",
+            "php": "7.3"
+        },
+        "title": "TK: Bet2uClub"
+    },
+    "SS: JoinBet": {
+        "qa": {
+            "engine": null,
+            "core": "1.10.0",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "joinbet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.10.0",
+            "theme": "1.1.1256",
+            "php": "7.3",
+            "subpath": "joinbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.10.0",
+            "preprod_theme": "1.1.1256",
+            "theme": "1.1.1256",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "SS: JoinBet"
+    },
+    "WLC: Lacbet": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "lacbet_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.6.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "lacbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.6.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.73",
+            "php": "7.3"
+        },
+        "title": "WLC: Lacbet"
+    },
+    "WLC: WebCasino": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.100",
+            "theme": "1.1.1315",
+            "php": "7.3",
+            "subpath": "webcasino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.100",
+            "theme": "1.1.1315",
+            "php": "7.3",
+            "subpath": "webcasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: WebCasino"
+    },
+    "TK: BigFaFa": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bigfafa_qa"
+        },
+        "test": {
+            "engine": "1.3.77",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bigfafa_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.8.1",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "TK: BigFaFa"
+    },
+    "WLC: Blgbet": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.159",
+            "theme": "1.1.1394",
+            "php": "7.3",
+            "subpath": "blgbet_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.159",
+            "theme": "1.1.1394",
+            "php": "7.3",
+            "subpath": "blgbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.159",
+            "preprod_theme": "1.1.1394",
+            "theme": "1.1.1394",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: Blgbet"
+    },
+    "WLC: BettingCitadel": {
+        "qa": {
+            "engine": "1.3.76",
+            "core": "1.10.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bettingcitadel_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.10.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "bettingcitadel_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.76",
+            "core": "1.10.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.76",
+            "php": "7.3"
+        },
+        "title": "WLC: BettingCitadel"
+    },
+    "WLC: WildSlaps": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "wildslaps_qa"
+        },
+        "test": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "wildslaps_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.73",
+            "core": "1.7.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.73",
+            "php": "7.3"
+        },
+        "title": "WLC: WildSlaps"
+    },
+    "WLC: WebbySlot": {
+        "qa": {
+            "engine": "1.3.71",
+            "core": "1.4.156",
+            "theme": "1.1.1392",
+            "php": "7.3",
+            "subpath": "webbyslot_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.156",
+            "theme": "1.1.1392",
+            "php": "7.3",
+            "subpath": "webbyslot_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: WebbySlot"
+    },
+    "SS: AuroomBet": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.82",
+            "theme": "1.1.1283",
+            "php": "7.3",
+            "subpath": "auroombet_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: AuroomBet"
+    },
+    "TK: Winnershall": {
+        "qa": {
+            "engine": "1.3.77",
+            "core": "1.4.107",
+            "theme": "1.1.1306",
+            "php": "7.3",
+            "subpath": "winnershall_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.4.107",
+            "theme": "1.1.1306",
+            "php": "7.3",
+            "subpath": "winnershall_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "TK: Winnershall"
+    },
+    "WLC: NissiCasino": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "nissicasino_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.51",
+            "theme": "1.1.1236",
+            "php": "7.3",
+            "subpath": "nissicasino_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: NissiCasino"
+    },
+    "WLC: Lion567": {
+        "qa": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "lion567_qa"
+        },
+        "test": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "lion567_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.72",
+            "core": "1.5.0",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.72",
+            "php": "7.3"
+        },
+        "title": "WLC: Lion567"
+    },
+    "SS: Slott": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.92",
+            "theme": "1.1.1275",
+            "php": "7.3",
+            "subpath": "slott_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.52",
+            "preprod_theme": "1.1.1235",
+            "theme": "1.1.1235",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "SS: Slott"
+    },
+    "SS: CDS": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": "1.1.1329",
+            "php": "7.3",
+            "subpath": "cds_qa"
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": null,
+            "theme": null,
+            "php": "7.3",
+            "subpath": "cds_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "SS: CDS"
+    },
+    "WLC: BetCombat": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.6.0-RC.30",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betcombat_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.6.0-RC.30",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "betcombat_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.75",
+            "core": "1.6.0-RC.30",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.75",
+            "php": "7.3"
+        },
+        "title": "WLC: BetCombat"
+    },
+    "WLC: Fantasysports": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.104",
+            "theme": "1.1.1368",
+            "php": "7.3",
+            "subpath": "fantasysports_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.104",
+            "theme": "1.1.1368",
+            "php": "7.3",
+            "subpath": "fantasysports_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: Fantasysports"
+    },
+    "WLC: 777betz": {
+        "qa": {
+            "engine": null,
+            "core": "1.4.159",
+            "theme": "1.1.1387",
+            "php": "7.3",
+            "subpath": "777betz_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.159",
+            "theme": "1.1.1387",
+            "php": "7.3",
+            "subpath": "777betz_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.159",
+            "preprod_theme": "1.1.1387",
+            "theme": "1.1.1387",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: 777betz"
+    },
+    "WLC: 33xBet": {
+        "qa": {
+            "engine": "1.3.69",
+            "core": "1.4.133",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "33xbet_qa"
+        },
+        "test": {
+            "engine": "1.3.69",
+            "core": "1.4.133",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "33xbet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.69",
+            "core": "1.4.133",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.69",
+            "php": "7.3"
+        },
+        "title": "WLC: 33xBet"
+    },
+    "WLC: BetRally": {
+        "qa": {
+            "engine": "1.3.73",
+            "core": "1.4.57",
+            "theme": "1.1.1329",
+            "php": "7.3",
+            "subpath": "betrally_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.57",
+            "theme": "1.1.1329",
+            "php": "7.3",
+            "subpath": "betrally_test"
+        },
+        "prod": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "title": "WLC: BetRally"
+    },
+    "WLC: DebbieDoesCasino": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": "1.3.76",
+            "core": "1.12.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "debbiedoescasino_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": null,
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: DebbieDoesCasino"
+    },
+    "WLC: Fortunazone": {
+        "qa": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "test": {
+            "engine": null,
+            "core": null,
+            "theme": null,
+            "php": null
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.4.165",
+            "preprod_theme": "1.1.1399",
+            "theme": "1.1.1399",
+            "il_live": false,
+            "preprod_core": "1.4.165",
+            "preprod_engine": null,
+            "php": "7.2"
+        },
+        "title": "WLC: Fortunazone"
+    },
+    "WLC: maximilian": {
+        "qa": {
+            "engine": null,
+            "core": "1.2.101",
+            "theme": "1.1.588",
+            "php": "7.3",
+            "subpath": "maximilian_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.2.101",
+            "theme": "1.1.588",
+            "php": "7.3",
+            "subpath": "maximilian_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.2.101",
+            "preprod_theme": "1.1.588",
+            "theme": "1.1.588",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: maximilian"
+    },
+    "WLC: YouSpinYouWin": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.4.36",
+            "theme": "1.1.1350",
+            "php": "7.3",
+            "subpath": "youspinyouwin_qa"
+        },
+        "test": {
+            "engine": null,
+            "core": "1.4.36",
+            "theme": "1.1.1350",
+            "php": "7.3",
+            "subpath": "youspinyouwin_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": null,
+            "core": "1.3.2",
+            "preprod_theme": "1.1.957",
+            "theme": "1.1.957",
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": null,
+            "php": "7.3"
+        },
+        "title": "WLC: YouSpinYouWin"
+    },
+    "WLC: Casino2021bet": {
+        "qa": {
+            "engine": "1.3.75",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "casino2021bet_qa"
+        },
+        "test": {
+            "engine": "1.3.75",
+            "core": "1.13.1",
+            "theme": null,
+            "php": "7.3",
+            "subpath": "casino2021bet_test"
+        },
+        "il_live": false,
+        "prod": {
+            "engine": "1.3.69",
+            "core": "1.4.142",
+            "preprod_theme": null,
+            "theme": null,
+            "il_live": false,
+            "preprod_core": null,
+            "preprod_engine": "1.3.69",
+            "php": "7.3"
+        },
+        "title": "WLC: Casino2021bet"
+    }
+}

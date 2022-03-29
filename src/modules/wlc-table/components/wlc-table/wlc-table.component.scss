@@ -1,0 +1,40 @@
+.wlc-table:host {
+    .wlc-table {
+        &__filters {
+            z-index: 2;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    ::ng-deep {
+        .p-datatable {
+            tr th,
+            tr td {
+                justify-content: center;
+                width: 150px;
+                text-align: center;
+
+                &:first-child {
+                    width: 300px;
+                }
+            }
+
+            .p-datatable {
+                &-thead > tr > th {
+                    background-color: var(--green-300);
+                }
+
+                &-tbody {
+                    tr > {
+                        td {
+                            &:first-child {
+                                background-color: var(--blue-300);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

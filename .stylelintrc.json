@@ -23,8 +23,11 @@
 				}
 			]
 		],
-		"indentation": "tab",
+		"indentation": 4,
 		"color-hex-case": "lower",
-		"at-rule-no-unknown": [true, { "ignoreAtRules": ["use"] }]
+		"at-rule-no-unknown": [true, { "ignoreAtRules": ["use"] }],
+        "selector-pseudo-element-no-unknown": [true, {
+            "ignorePseudoElements": ["ng-deep"]
+        }]
 	}
 }

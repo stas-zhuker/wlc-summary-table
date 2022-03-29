@@ -1,0 +1,37 @@
+<ng-container *ngIf="env !== 'preprod'; else preprod">
+    <p-columnFilter [field]="env + '.' + item" matchMode="in" [showMenu]="false">
+        <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+            <p-multiSelect
+                [ngModel]="value"
+                [options]="getVersionsList(env, item)"
+                placeholder="Any"
+                (onChange)="filter($event.value)"
+            >
+                <ng-template let-option pTemplate="item">
+                    <div class="p-multiselect-representative-option">
+                        <span class="ml-1">{{ option }}</span>
+                    </div>
+                </ng-template>
+            </p-multiSelect>
+        </ng-template>
+    </p-columnFilter>
+</ng-container>
+
+<ng-template #preprod>
+    <p-columnFilter [field]="'prod.preprod_' + item" matchMode="in" [showMenu]="false">
+        <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+            <p-multiSelect
+                [ngModel]="value"
+                [options]="getVersionsList(env, item)"
+                placeholder="Any"
+                (onChange)="filter($event.value)"
+            >
+                <ng-template let-option pTemplate="item">
+                    <div class="p-multiselect-representative-option">
+                        <span class="ml-1">{{ option }}</span>
+                    </div>
+                </ng-template>
+            </p-multiSelect>
+        </ng-template>
+    </p-columnFilter>
+</ng-template>

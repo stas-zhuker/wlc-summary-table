@@ -1,0 +1,103 @@
+<p-table
+    styleClass="p-datatable-gridlines p-datatable-sm p-datatable-striped"
+    [value]="projectsVersions"
+    [scrollable]="true"
+    scrollDirection="both"
+    [scrollHeight]="screenHeight"
+    #dt
+    dataKey="title"
+    [globalFilterFields]="['title', 'qa.engine', 'qa.theme']"
+    selectionMode="multiple"
+    [(selection)]="selectedRows"
+    [columns]="selectedColumns"
+>
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th rowspan="3" pFrozenColumn class="{{ $hostClass }}__filters">
+                <span class="p-input-icon-left ml-auto">
+                    <i class="pi pi-search"></i>
+                    <input
+                        pInputText
+                        type="text"
+                        (input)="applyFilterGlobal($event, 'contains')"
+                        placeholder="Glonal search"
+                    />
+                </span>
+                <p-multiSelect
+                    [options]="cols"
+                    [(ngModel)]="selectedColumns"
+                    optionLabel="header"
+                    selectedItemsLabel="{0} columns selected"
+                    [style]="{ minWidth: '200px' }"
+                    placeholder="Choose Columns"
+                ></p-multiSelect>
+            </th>
+            <th colspan="15" *ngIf="versionsCellWith()" [style]="{ width: versionsCellWith() + 'px' }">Versions</th>
+        </tr>
+        <tr>
+            <th pFrozenColumn>
+                <p-button label="Clear rows seletion" (click)="clearSelectedRows()"></p-button>
+            </th>
+
+            <th *ngFor="let col of columns" [style]="{ width: col.elems * defColWidth + 'px' }">
+                {{ col.header }}
+            </th>
+        </tr>
+        <tr>
+            <th pFrozenColumn>Project</th>
+
+            <ng-container *ngFor="let col of columns">
+                <th [style]="{ width: defColWidth + 'px' }">engine</th>
+                <th [style]="{ width: defColWidth + 'px' }">theme</th>
+                <th [style]="{ width: defColWidth + 'px' }">core</th>
+                <th *ngIf="col.env !== 'preprod'" [style]="{ width: defColWidth + 'px' }">php</th>
+            </ng-container>
+        </tr>
+        <tr>
+            <th pFrozenColumn>
+                <p-columnFilter
+                    type="text"
+                    field="title"
+                    matchMode="contains"
+                    placeholder="Project search"
+                    [showMenu]="false"
+                ></p-columnFilter>
+            </th>
+
+            <ng-container *ngFor="let col of columns">
+                <th [style]="{ width: defColWidth + 'px' }">
+                    <app-versions-selector [env]="col.env" [item]="'engine'"></app-versions-selector>
+                </th>
+                <th [style]="{ width: defColWidth + 'px' }">
+                    <app-versions-selector [env]="col.env" [item]="'theme'"></app-versions-selector>
+                </th>
+                <th [style]="{ width: defColWidth + 'px' }">
+                    <app-versions-selector [env]="col.env" [item]="'core'"></app-versions-selector>
+                </th>
+                <th *ngIf="col.env !== 'preprod'" [style]="{ width: defColWidth + 'px' }">
+                    <app-versions-selector [env]="col.env" [item]="'php'"></app-versions-selector>
+                </th>
+            </ng-container>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-rowIndex let-columns="columns">
+        <tr [pSelectableRow]="rowData" [pSelectableRowIndex]="rowIndex">
+            <td pFrozenColumn>{{ rowData.title }}</td>
+
+            <ng-container *ngFor="let col of columns">
+                <ng-container *ngIf="col.env !== 'preprod'; else preprod">
+                    <td>{{ rowData[col.env].engine }}</td>
+                    <td>{{ rowData[col.env].theme }}</td>
+                    <td>{{ rowData[col.env].core }}</td>
+                    <td>{{ rowData[col.env].php }}</td>
+                </ng-container>
+            </ng-container>
+
+            <ng-template #preprod>
+                <td>{{ rowData.prod.preprod_engine }}</td>
+                <td>{{ rowData.prod.preprod_theme }}</td>
+                <td>{{ rowData.prod.preprod_core }}</td>
+            </ng-template>
+        </tr>
+    </ng-template>
+</p-table>
