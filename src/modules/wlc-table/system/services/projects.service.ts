@@ -4,12 +4,17 @@ import _forIn from 'lodash-es/forIn';
 import _startsWith from 'lodash-es/startsWith';
 
 import { IProjectVersions } from 'src/modules/wlc-table/system/interfaces/project.interface';
-import projectsData from 'src/assets/projects.json';
 
 @Injectable({
     providedIn: 'root',
 })
 export class ProjectService {
+    public ready: Promise<void> = new Promise((resolve: () => void): void => {
+        this.$resolve = resolve;
+    });
+
+    private $resolve: () => void;
+
     private _projects: IProjectVersions[] = [];
 
     constructor() {
@@ -20,15 +25,16 @@ export class ProjectService {
         return this._projects;
     }
 
-    public set projects(newProjects) {
-        this._projects = newProjects;
-    }
-
     private async fetchProjects(): Promise<void> {
-        _forIn(projectsData, (projectVersions) => {
+        const response = await fetch('https://keepalive.egamings.com/assets/wlc.json');
+        const projects = await response.json();
+
+        _forIn(projects, (projectVersions) => {
             this.engineBranchHandler(projectVersions);
             this._projects.push(projectVersions);
         });
+
+        this.$resolve();
     }
 
     private async engineBranchHandler(versions: IProjectVersions): Promise<void> {

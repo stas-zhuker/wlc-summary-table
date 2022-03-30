@@ -11,7 +11,7 @@ export interface IVersionsInEnv {
     theme: string;
     core: string;
     php: string;
-} 
+}
 
 export interface IVersionsInProd extends IVersionsInEnv {
     preprod_core?: string;
@@ -20,4 +20,12 @@ export interface IVersionsInProd extends IVersionsInEnv {
     il_live?: boolean;
 }
 
-export type TEnvType = 'qa' | 'test' | 'preprod' | 'prod'; 
+export interface IVersionsEnvColumn {
+    env: TEnvType;
+    elems: number;
+    header: string;
+}
+
+export type TEnvType = 'qa' | 'test' | 'preprod' | 'prod';
+
+export type TDepType = 'engine' | 'theme' | 'core' | 'php';
