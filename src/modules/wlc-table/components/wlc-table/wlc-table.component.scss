@@ -3,7 +3,20 @@
         &__filters {
             z-index: 2;
             flex-direction: column;
-            gap: 5px;
+        }
+
+        &__global-search-input {
+            max-width: 240px;
+        }
+
+        &__env-cell {
+            &-first {
+                border-left-color: var(--text-color);
+            }
+
+            &-last {
+                border-right-color: var(--text-color);
+            }
         }
     }
 
@@ -11,18 +24,35 @@
         .p-datatable {
             tr th,
             tr td {
+                gap: 5px;
                 justify-content: center;
-                width: 150px;
+                width: 110px;
                 text-align: center;
 
                 &:first-child {
-                    width: 300px;
+                    width: 250px;
                 }
             }
 
             .p-datatable {
-                &-thead > tr > th {
-                    background-color: var(--green-300);
+                &-thead {
+                    .wlc-table {
+                        &__row {
+                            &--first {
+                                .p-multiselect {
+                                    max-width: 230px;
+                                }
+                            }
+                        }
+                    }
+
+                    .p-multiselect-panel {
+                        min-width: 200px;
+                    }
+
+                    > tr > th {
+                        background-color: var(--green-300);
+                    }
                 }
 
                 &-tbody {

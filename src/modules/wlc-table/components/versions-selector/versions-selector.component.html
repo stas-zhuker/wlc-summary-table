@@ -1,15 +1,15 @@
 <ng-container *ngIf="env !== 'preprod'; else preprod">
-    <p-columnFilter [field]="env + '.' + item" matchMode="in" [showMenu]="false">
+    <p-columnFilter class="{{$hostClass}}__column-filter" [field]="env + '.' + item" matchMode="in" [showMenu]="false">
         <ng-template pTemplate="filter" let-value let-filter="filterCallback">
             <p-multiSelect
+                placeholder="Any"
                 [ngModel]="value"
                 [options]="getVersionsList(env, item)"
-                placeholder="Any"
                 (onChange)="filter($event.value)"
             >
-                <ng-template let-option pTemplate="item">
-                    <div class="p-multiselect-representative-option">
-                        <span class="ml-1">{{ option }}</span>
+                <ng-template pTemplate="item" let-option>
+                    <div>
+                        <span class="ml-1">{{ option.value }}</span>
                     </div>
                 </ng-template>
             </p-multiSelect>
@@ -21,14 +21,14 @@
     <p-columnFilter [field]="'prod.preprod_' + item" matchMode="in" [showMenu]="false">
         <ng-template pTemplate="filter" let-value let-filter="filterCallback">
             <p-multiSelect
+                placeholder="Any"
                 [ngModel]="value"
                 [options]="getVersionsList(env, item)"
-                placeholder="Any"
                 (onChange)="filter($event.value)"
             >
-                <ng-template let-option pTemplate="item">
-                    <div class="p-multiselect-representative-option">
-                        <span class="ml-1">{{ option }}</span>
+                <ng-template pTemplate="item" let-option>
+                    <div>
+                        <span class="ml-1">{{ option.value }}</span>
                     </div>
                 </ng-template>
             </p-multiSelect>
