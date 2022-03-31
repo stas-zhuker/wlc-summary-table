@@ -15,10 +15,13 @@ import { ProjectService } from 'src/modules/wlc-table/system/services/projects.s
 export class VersionsSelectorComponent implements OnInit {
     @HostBinding('class') public $hostClass = 'versions-selector';
 
+    // enviroment name
     @Input() public env: TEnvType;
 
+    // item in enviroment
     @Input() public item: TDepType;
 
+    // fields to which the global filter will be applied
     public projectsVersions: IProjectVersions[] = [];
 
     constructor(protected projectService: ProjectService) {}
@@ -28,6 +31,14 @@ export class VersionsSelectorComponent implements OnInit {
         this.projectsVersions = this.projectService.projects;
     }
 
+    /**
+     * Get versions collection
+     *
+     * @param {string} env enviroment
+     * @param {string} item item in enviroment
+     *
+     * @returns {object[]} array of objects to search in multiselect-filter input and filter rows
+     */
     public getVersionsList(env: string, item: string): object[] {
         let versionsArr = [];
 

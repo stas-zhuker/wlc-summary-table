@@ -16,6 +16,7 @@ export class WlcTableComponent implements OnInit {
 
     @ViewChild('dt') public dt: Table;
 
+    // fields to which the global filter will be applied
     public globalFilterFields = [
         'title',
         'qa.engine',
@@ -35,16 +36,22 @@ export class WlcTableComponent implements OnInit {
         'prod.php',
     ];
 
+    // width of the table cell
     public defColWidth = 110;
 
+    // projects versions list
     public projectsVersions: IProjectVersions[] = [];
 
+    // list of columns to enable and disable the display of columns
     public cols: IVersionsEnvColumn[] = [];
 
+    // selected rows
     public selectedRows: IProjectVersions[];
 
+    // screen height to use scrollbar
     public screenHeight: string;
 
+    // selected columns to display
     private _selectedColumns: IVersionsEnvColumn[];
 
     constructor(protected projectService: ProjectService) {
@@ -68,10 +75,12 @@ export class WlcTableComponent implements OnInit {
         }
     }
 
+    // get selected columns to display
     get selectedColumns(): IVersionsEnvColumn[] {
         return this._selectedColumns;
     }
 
+    // set selected columns to display and writing them to the localStorage
     set selectedColumns(selectedCols: IVersionsEnvColumn[]) {
         // restore original order (from primeNG doc: https://www.primefaces.org/primeng/#/table/coltoggle)
         this._selectedColumns = this.cols.filter((col) => selectedCols.includes(col));
@@ -81,20 +90,33 @@ export class WlcTableComponent implements OnInit {
         localStorage.setItem('table-storage', JSON.stringify(tableStorage));
     }
 
+    // get global filter from storage
     public get globalFilterFromStorage(): string {
         const tableStorage = JSON.parse(localStorage.getItem('table-storage'));
 
         return tableStorage?.filters?.global?.value || '';
     }
 
+    /**
+     * Remove table storage from localStorage
+     */
     public clearTableStorage(): void {
         localStorage.removeItem('table-storage');
     }
 
-    public applyFilterGlobal($event, stringVal) {
+    /**
+     * Apply global filter
+     *
+     * @param {Event} $event
+     * @param {string} stringVal
+     */
+    public applyFilterGlobal($event: Event, stringVal: string): void {
         this.dt.filterGlobal(($event.target as HTMLInputElement).value, stringVal);
     }
 
+    /**
+     * Clear selected rows and remove it from localStorage
+     */
     public clearSelectedRows(): void {
         const tableStorage = JSON.parse(localStorage.getItem('table-storage'));
         delete tableStorage.selection;
@@ -103,7 +125,12 @@ export class WlcTableComponent implements OnInit {
         this.selectedRows = [];
     }
 
-    public versionsCellWith(): number {
+    /**
+     * Get varsions cell width
+     *
+     * @returns {number} cell width in px
+     */
+    public versionsCellWidth(): number {
         return _reduce(
             this.selectedColumns,
             (result, col) => {
