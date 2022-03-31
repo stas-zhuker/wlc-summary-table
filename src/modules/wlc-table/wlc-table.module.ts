@@ -6,23 +6,21 @@ import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
-import { ToastModule } from 'primeng/toast';
-
-import { WlcTableComponent } from './components/wlc-table/wlc-table.component';
-import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
 import { ButtonModule } from 'primeng/button';
-import { VersionsSelectorComponent } from './components/versions-selector/versions-selector.component';
+
+import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
+import { WlcTableComponent } from 'src/modules/wlc-table/components/wlc-table/wlc-table.component';
+import { VersionsSelectorComponent } from 'src/modules/wlc-table/components/versions-selector/versions-selector.component';
 
 @NgModule({
     declarations: [WlcTableComponent, VersionsSelectorComponent],
     imports: [
         CommonModule,
+        FormsModule,
         TableModule,
         InputTextModule,
         MultiSelectModule,
-        FormsModule,
         BrowserAnimationsModule,
-        ToastModule,
         ButtonModule,
     ],
     exports: [WlcTableComponent],
