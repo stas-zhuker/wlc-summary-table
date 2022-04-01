@@ -7,6 +7,7 @@ import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { ButtonModule } from 'primeng/button';
+import { CheckboxModule } from 'primeng/checkbox';
 
 import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
 import { WlcTableComponent } from 'src/modules/wlc-table/components/wlc-table/wlc-table.component';
@@ -22,6 +23,7 @@ import { VersionsSelectorComponent } from 'src/modules/wlc-table/components/vers
         MultiSelectModule,
         BrowserAnimationsModule,
         ButtonModule,
+        CheckboxModule,
     ],
     exports: [WlcTableComponent],
     providers: [ProjectService],

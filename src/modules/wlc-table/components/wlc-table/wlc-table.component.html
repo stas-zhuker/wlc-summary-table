@@ -11,7 +11,7 @@
     selectionMode="multiple"
     [(selection)]="selectedRows"
     stateStorage="local"
-    stateKey="table-storage"
+    stateKey="table-state"
 >
     <ng-template pTemplate="header" let-columns>
         <tr class="{{ $hostClass }}__row {{ $hostClass }}__row--first">
@@ -40,7 +40,7 @@
         <tr>
             <th pFrozenColumn>
                 <p-button label="Rows sel" icon="pi pi-trash" (click)="clearSelectedRows()"></p-button>
-                <p-button label="Storage" icon="pi pi-trash" (click)="clearTableStorage()"></p-button>
+                <p-button label="Storage" icon="pi pi-trash" (click)="clearTableStates()"></p-button>
             </th>
 
             <th
@@ -62,7 +62,7 @@
             </ng-container>
         </tr>
         <tr>
-            <th pFrozenColumn>
+            <th pFrozenColumn class="{{ $hostClass }}__row {{ $hostClass }}__row--project-search">
                 <p-columnFilter
                     type="text"
                     placeholder="Project search"
@@ -70,6 +70,12 @@
                     matchMode="contains"
                     [showMenu]="false"
                 ></p-columnFilter>
+                <p-checkbox
+                    label="Show selected rows only"
+                    [(ngModel)]="showSelectedRowsOnly"
+                    [binary]="true"
+                    (onChange)="showSelectedRowsChange()"
+                ></p-checkbox>
             </th>
 
             <ng-container *ngFor="let col of columns">
@@ -89,7 +95,7 @@
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-rowData let-columns="columns">
-        <tr [pSelectableRow]="rowData">
+        <tr *ngIf="!showSelectedRowsOnly || selectedRowsTitlesSet.has(rowData.title)" [pSelectableRow]="rowData">
             <td pFrozenColumn>{{ rowData.title }}</td>
 
             <ng-container *ngFor="let col of columns">

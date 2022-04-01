@@ -1,10 +1,17 @@
 import { Component, HostBinding, HostListener, OnInit, ViewChild } from '@angular/core';
 
 import _reduce from 'lodash-es/reduce';
+import _forEach from 'lodash-es/forEach';
 import { Table } from 'primeng/table';
 
-import { IProjectVersions, IVersionsEnvColumn } from 'src/modules/wlc-table/system/interfaces/project.interface';
+import {
+    ICustomTableState,
+    IProjectVersions,
+    IVersionsEnvColumn,
+    TTableStateType,
+} from 'src/modules/wlc-table/system/interfaces/project.interface';
 import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
+import { TableState } from 'primeng/api/tablestate';
 
 @Component({
     selector: 'app-wlc-table',
@@ -16,7 +23,9 @@ export class WlcTableComponent implements OnInit {
 
     @ViewChild('dt') public dt: Table;
 
-    // fields to which the global filter will be applied
+    /**
+     * Fields to which the global filter will be applied
+     */
     public globalFilterFields = [
         'title',
         'qa.engine',
@@ -36,26 +45,48 @@ export class WlcTableComponent implements OnInit {
         'prod.php',
     ];
 
-    // width of the table cell
+    /**
+     * width of the table cell
+     */
     public defColWidth = 110;
 
-    // projects versions list
+    /**
+     * projects versions list
+     */
     public projectsVersions: IProjectVersions[] = [];
 
-    // list of columns to enable and disable the display of columns
+    /**
+     * list of columns to enable and disable the display of columns
+     */
     public cols: IVersionsEnvColumn[] = [];
 
-    // selected rows
-    public selectedRows: IProjectVersions[];
+    /**
+     * selected rows
+     */
+    public _selectedRows: IProjectVersions[];
 
-    // screen height to use scrollbar
+    /**
+     * screen height to use scrollbar
+     */
     public screenHeight: string;
 
-    // selected columns to display
+    /**
+     * show only selected rows
+     */
+    public showSelectedRowsOnly: boolean;
+
+    /**
+     * Set of selected rows title
+     */
+    private _selectedRowsTitlesSet: Set<string> = new Set();
+
+    /**
+     * selected columns to display
+     */
     private _selectedColumns: IVersionsEnvColumn[];
 
-    constructor(protected projectService: ProjectService) {
-        this._selectedColumns = JSON.parse(localStorage.getItem('table-storage'))?.selectedColumns || [];
+    constructor(private projectService: ProjectService) {
+        this._selectedColumns = this.getTableStateFromLocalStorage('custom-table-state').selectedColumns || [];
     }
 
     public async ngOnInit(): Promise<void> {
@@ -73,35 +104,74 @@ export class WlcTableComponent implements OnInit {
         if (!this.selectedColumns.length) {
             this.selectedColumns = this.cols;
         }
-    }
 
-    // get selected columns to display
-    get selectedColumns(): IVersionsEnvColumn[] {
-        return this._selectedColumns;
-    }
-
-    // set selected columns to display and writing them to the localStorage
-    set selectedColumns(selectedCols: IVersionsEnvColumn[]) {
-        // restore original order (from primeNG doc: https://www.primefaces.org/primeng/#/table/coltoggle)
-        this._selectedColumns = this.cols.filter((col) => selectedCols.includes(col));
-
-        const tableStorage = JSON.parse(localStorage.getItem('table-storage')) || {};
-        tableStorage.selectedColumns = this.selectedColumns;
-        localStorage.setItem('table-storage', JSON.stringify(tableStorage));
-    }
-
-    // get global filter from storage
-    public get globalFilterFromStorage(): string {
-        const tableStorage = JSON.parse(localStorage.getItem('table-storage'));
-
-        return tableStorage?.filters?.global?.value || '';
+        this.showSelectedRowsOnly = this.getTableStateFromLocalStorage('custom-table-state').showSelectedRowsOnly;
     }
 
     /**
-     * Remove table storage from localStorage
+     * get selected columns to display
      */
-    public clearTableStorage(): void {
-        localStorage.removeItem('table-storage');
+    public get selectedColumns(): IVersionsEnvColumn[] {
+        return this._selectedColumns;
+    }
+
+    /**
+     * set selected columns to display and writing them to the localStorage
+     */
+    public set selectedColumns(selectedCols: IVersionsEnvColumn[]) {
+        const customTableState = this.getTableStateFromLocalStorage('custom-table-state');
+        // restore original order (from primeNG doc: https://www.primefaces.org/primeng/#/table/coltoggle)
+        this._selectedColumns = this.cols.filter((col) => selectedCols.includes(col));
+
+        customTableState.selectedColumns = this.selectedColumns;
+        this.setNewTableStateToLocalStorage(customTableState, 'custom-table-state');
+    }
+
+    /**
+     * get selected rows
+     */
+    public get selectedRows() {
+        return this._selectedRows;
+    }
+
+    /**
+     * set selected rows and update select rows title set
+     */
+    public set selectedRows(rows: IProjectVersions[]) {
+        this.updateSelectRowsTitleSet(rows);
+        this._selectedRows = rows;
+    }
+
+    /**
+     * get selected rows title set
+     */
+    public get selectedRowsTitlesSet(): Set<string> {
+        return this._selectedRowsTitlesSet;
+    }
+
+    /**
+     * get global filter from local storage
+     */
+    public get globalFilterFromStorage(): string {
+        return this.getTableStateFromLocalStorage('table-state').filters?.global?.value || '';
+    }
+
+    /**
+     * change checkbox showSelectedRowsOnly
+     */
+    public showSelectedRowsChange() {
+        const customTableState = this.getTableStateFromLocalStorage('custom-table-state');
+        customTableState.showSelectedRowsOnly = this.showSelectedRowsOnly;
+        this.setNewTableStateToLocalStorage(customTableState, 'custom-table-state');
+    }
+
+    /**
+     * Remove table states from localStorage and reload page
+     */
+    public clearTableStates(): void {
+        localStorage.removeItem('table-state');
+        localStorage.removeItem('custom-table-state');
+        location.reload();
     }
 
     /**
@@ -118,11 +188,12 @@ export class WlcTableComponent implements OnInit {
      * Clear selected rows and remove it from localStorage
      */
     public clearSelectedRows(): void {
-        const tableStorage = JSON.parse(localStorage.getItem('table-storage'));
-        delete tableStorage.selection;
+        const tableState = this.getTableStateFromLocalStorage('table-state');
+        delete tableState.selection;
 
-        localStorage.setItem('table-storage', JSON.stringify(tableStorage));
+        this.setNewTableStateToLocalStorage(tableState, 'table-state');
         this.selectedRows = [];
+        this.updateSelectRowsTitleSet([]);
     }
 
     /**
@@ -140,8 +211,41 @@ export class WlcTableComponent implements OnInit {
         );
     }
 
+    /**
+     * Window resize handler
+     */
     @HostListener('window:resize')
     public onResize(): void {
         this.screenHeight = window.innerHeight + 'px';
+    }
+
+    /**
+     * Update select rows title set
+     *
+     * @param {IProjectVersions[]} selectedRows
+     */
+    private updateSelectRowsTitleSet(selectedRows: IProjectVersions[]) {
+        this._selectedRowsTitlesSet.clear();
+        _forEach(selectedRows, (project) => this._selectedRowsTitlesSet.add(project.title));
+    }
+
+    /**
+     * Get table state from local storage
+     */
+    private getTableStateFromLocalStorage(tableStateType: TTableStateType) {
+        return JSON.parse(localStorage.getItem(tableStateType)) || {};
+    }
+
+    /**
+     * Set new table state to local storage
+     *
+     * @param {TableState | ICustomTableState} tableState table storage object
+     * @param {TTableStateType} tableStateType table storage object
+     */
+    private setNewTableStateToLocalStorage(
+        tableState: TableState | ICustomTableState,
+        tableStateType: TTableStateType
+    ) {
+        localStorage.setItem(tableStateType, JSON.stringify(tableState));
     }
 }
