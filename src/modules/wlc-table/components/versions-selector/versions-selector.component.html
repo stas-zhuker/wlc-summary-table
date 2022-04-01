@@ -4,13 +4,11 @@
             <p-multiSelect
                 placeholder="Any"
                 [ngModel]="value"
-                [options]="getVersionsList(env, item)"
+                [options]="versionsList"
                 (onChange)="filter($event.value)"
             >
                 <ng-template pTemplate="item" let-option>
-                    <div>
-                        <span class="ml-1">{{ option.value }}</span>
-                    </div>
+                    <span class="ml-1">{{ option.value }}</span>
                 </ng-template>
             </p-multiSelect>
         </ng-template>
@@ -23,13 +21,11 @@
             <p-multiSelect
                 placeholder="Any"
                 [ngModel]="value"
-                [options]="getVersionsList(env, item)"
+                [options]="versionsList"
                 (onChange)="filter($event.value)"
             >
                 <ng-template pTemplate="item" let-option>
-                    <div>
-                        <span class="ml-1">{{ option.value }}</span>
-                    </div>
+                    <span class="ml-1">{{ option.value }}</span>
                 </ng-template>
             </p-multiSelect>
         </ng-template>

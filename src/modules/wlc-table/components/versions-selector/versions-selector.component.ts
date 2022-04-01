@@ -4,7 +4,12 @@ import _forEach from 'lodash-es/forEach';
 import _reverse from 'lodash-es/reverse';
 import _map from 'lodash-es/map';
 
-import { IProjectVersions, TDepType, TEnvType } from 'src/modules/wlc-table/system/interfaces/project.interface';
+import {
+    IProjectVersions,
+    IVersionsListItem,
+    TDepType,
+    TEnvType,
+} from 'src/modules/wlc-table/system/interfaces/project.interface';
 import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
 
 @Component({
@@ -15,45 +20,52 @@ import { ProjectService } from 'src/modules/wlc-table/system/services/projects.s
 export class VersionsSelectorComponent implements OnInit {
     @HostBinding('class') public $hostClass = 'versions-selector';
 
-    // enviroment name
+    /**
+     * enviroment name
+     */
     @Input() public env: TEnvType;
 
-    // item in enviroment
+    /**
+     * item in enviroment
+     */
     @Input() public item: TDepType;
 
-    // fields to which the global filter will be applied
-    public projectsVersions: IProjectVersions[] = [];
+    /**
+     * versions list
+     */
+    public versionsList: IVersionsListItem[] = [];
+
+    /**
+     * project versions array
+     */
+    protected projectsVersions: IProjectVersions[] = [];
 
     constructor(protected projectService: ProjectService) {}
 
     public async ngOnInit(): Promise<void> {
         await this.projectService.ready;
         this.projectsVersions = this.projectService.projects;
+        this.setVersionsList();
     }
 
     /**
-     * Get versions collection
-     *
-     * @param {string} env enviroment
-     * @param {string} item item in enviroment
-     *
-     * @returns {object[]} array of objects to search in multiselect-filter input and filter rows
+     * Set versions list
      */
-    public getVersionsList(env: string, item: string): object[] {
+    protected setVersionsList(): void {
         let versionsArr = [];
 
-        if (env !== 'preprod') {
+        if (this.env !== 'preprod') {
             _forEach(this.projectsVersions, (project) => {
-                if (!!project[env][item]) {
-                    versionsArr.push(project[env][item]);
+                if (!!project[this.env][this.item]) {
+                    versionsArr.push(project[this.env][this.item]);
                 } else {
                     versionsArr.push('-');
                 }
             });
         } else {
             _forEach(this.projectsVersions, (project) => {
-                if (!!project.prod['preprod_' + item]) {
-                    versionsArr.push(project.prod['preprod_' + item]);
+                if (!!project.prod['preprod_' + this.item]) {
+                    versionsArr.push(project.prod['preprod_' + this.item]);
                 } else {
                     versionsArr.push('-');
                 }
@@ -67,6 +79,6 @@ export class VersionsSelectorComponent implements OnInit {
             return { label: value, value: value };
         });
 
-        return versionsArr;
+        this.versionsList = versionsArr;
     }
 }

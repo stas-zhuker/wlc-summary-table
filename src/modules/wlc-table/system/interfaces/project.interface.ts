@@ -1,3 +1,8 @@
+export interface ICustomTableState {
+    selectedColumns: IVersionsEnvColumn[];
+    showSelectedRowsOnly: boolean;
+}
+
 export interface IProjectVersions {
     qa: IVersionsInEnv;
     test: IVersionsInEnv;
@@ -26,6 +31,17 @@ export interface IVersionsEnvColumn {
     header: string;
 }
 
+export interface IVersionsListItem {
+    label: string;
+    value: string;
+}
+
 export type TEnvType = 'qa' | 'test' | 'preprod' | 'prod';
 
 export type TDepType = 'engine' | 'theme' | 'core' | 'php';
+
+/**
+ * Use 'table-state' to PrimeNG table state (type TableState) fields and 'custom-table-state' to custom fields,
+ * because when a table updates her fields in localStorage, it doesn't know about custom fields and delete them.
+ */
+export type TTableStateType = 'table-state' | 'custom-table-state';
