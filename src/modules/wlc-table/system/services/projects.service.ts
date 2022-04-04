@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import _forIn from 'lodash-es/forIn';
 import _startsWith from 'lodash-es/startsWith';
+import _has from 'lodash-es/has';
 
 import { IProjectVersions } from 'src/modules/wlc-table/system/interfaces/project.interface';
 
@@ -31,13 +32,14 @@ export class ProjectService {
 
         _forIn(projects, (projectVersions) => {
             this.engineBranchHandler(projectVersions);
+            this.absencePreprodFieldsHandler(projectVersions);
             this._projects.push(projectVersions);
         });
 
         this.$resolve();
     }
 
-    private async engineBranchHandler(versions: IProjectVersions): Promise<void> {
+    private engineBranchHandler(versions: IProjectVersions): void {
         if (_startsWith(versions.qa.engine, 'git+ssh')) {
             versions.qa.engine = 'branch';
         }
@@ -52,6 +54,21 @@ export class ProjectService {
 
         if (_startsWith(versions.prod.engine, 'git+ssh')) {
             versions.prod.engine = 'branch';
+        }
+    }
+
+    // in order not to not duplicate the filter by empty cells
+    private absencePreprodFieldsHandler(versions: IProjectVersions): void {
+        if (!_has(versions.prod, 'preprod_engine')) {
+            versions.prod.preprod_engine = null;
+        }
+
+        if (!_has(versions.prod, 'preprod_theme')) {
+            versions.prod.preprod_theme = null;
+        }
+
+        if (!_has(versions.prod, 'preprod_core')) {
+            versions.prod.preprod_core = null;
         }
     }
 }
