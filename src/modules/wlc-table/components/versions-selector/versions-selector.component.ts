@@ -56,19 +56,11 @@ export class VersionsSelectorComponent implements OnInit {
 
         if (this.env !== 'preprod') {
             _forEach(this.projectsVersions, (project) => {
-                if (!!project[this.env][this.item]) {
-                    versionsArr.push(project[this.env][this.item]);
-                } else {
-                    versionsArr.push('-');
-                }
+                versionsArr.push(project[this.env][this.item]);
             });
         } else {
             _forEach(this.projectsVersions, (project) => {
-                if (!!project.prod['preprod_' + this.item]) {
-                    versionsArr.push(project.prod['preprod_' + this.item]);
-                } else {
-                    versionsArr.push('-');
-                }
+                versionsArr.push(project.prod['preprod_' + this.item]);
             });
         }
 
