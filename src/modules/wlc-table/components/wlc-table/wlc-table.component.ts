@@ -4,9 +4,14 @@ import _reduce from 'lodash-es/reduce';
 import _forEach from 'lodash-es/forEach';
 import { Table } from 'primeng/table';
 
-import { IProjectVersions, IVersionsEnvColumn } from 'src/modules/wlc-table/system/interfaces/project.interface';
+import {
+    IProjectVersions,
+    IVersionsEnvColumn,
+    TDepType,
+} from 'src/modules/wlc-table/system/interfaces/project.interface';
 import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
 import { LocalStorageService } from 'src/modules/wlc-table/system/services/local-storage.service';
+import { BadReleasesSheetService } from 'src/modules/google-sheets/systems/servises/bad-releases-sheet.service';
 
 @Component({
     selector: 'app-wlc-table',
@@ -85,7 +90,11 @@ export class WlcTableComponent implements OnInit {
      */
     private _selectedColumns: IVersionsEnvColumn[];
 
-    constructor(private projectService: ProjectService, private localStorageService: LocalStorageService) {
+    constructor(
+        private projectService: ProjectService,
+        private localStorageService: LocalStorageService,
+        private badReleasesSheetService: BadReleasesSheetService
+    ) {
         this._selectedColumns = this.localStorageService.getTableState('custom-table-state').selectedColumns || [];
     }
 
@@ -139,6 +148,8 @@ export class WlcTableComponent implements OnInit {
 
     public async ngOnInit(): Promise<void> {
         await this.projectService.ready;
+        await this.badReleasesSheetService.ready;
+
         this.projectsVersions = this.projectService.projects;
         this.screenHeight = window.innerHeight + 'px';
 
@@ -200,6 +211,13 @@ export class WlcTableComponent implements OnInit {
      */
     public clearTableStates(): void {
         this.localStorageService.clearTableStates();
+    }
+
+    /**
+     * Get tooltip from bad releases table
+     */
+    public getTooltip(dep: TDepType, version: string) {
+        return this.badReleasesSheetService.badReleases[dep][version] || '';
     }
 
     /**

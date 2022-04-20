@@ -32,7 +32,7 @@
                     [(ngModel)]="selectedColumns"
                     [options]="cols"
                     optionLabel="header"
-                    selectedItemsLabel="{0} columns selected"
+                    selectedItemsLabel="{0} enviroments selected"
                 ></p-multiSelect>
             </th>
             <th *ngIf="versionsCellWidth()" colspan="15" [style]="{ width: versionsCellWidth() + 'px' }">Versions</th>
@@ -100,17 +100,50 @@
 
             <ng-container *ngFor="let col of columns">
                 <ng-container *ngIf="col.env !== 'preprod'; else preprod">
-                    <td class="{{ $hostClass }}__env-cell-first">{{ rowData[col.env].engine }}</td>
-                    <td>{{ rowData[col.env].theme }}</td>
-                    <td>{{ rowData[col.env].core }}</td>
+                    <td
+                        class="{{ $hostClass }}__env-cell-first"
+                        [ngClass]="{ 'has-tooltip': getTooltip('engine', rowData[col.env].engine) }"
+                        [pTooltip]="getTooltip('engine', rowData[col.env].engine)"
+                    >
+                        {{ rowData[col.env].engine }}
+                    </td>
+                    <td
+                        [ngClass]="{ 'has-tooltip': getTooltip('theme', rowData[col.env].theme) }"
+                        [pTooltip]="getTooltip('theme', rowData[col.env].theme)"
+                    >
+                        {{ rowData[col.env].theme }}
+                    </td>
+                    <td
+                        [ngClass]="{ 'has-tooltip': getTooltip('core', rowData[col.env].core) }"
+                        [pTooltip]="getTooltip('core', rowData[col.env].core)"
+                    >
+                        {{ rowData[col.env].core }}
+                    </td>
                     <td class="{{ $hostClass }}__env-cell-last">{{ rowData[col.env].php }}</td>
                 </ng-container>
             </ng-container>
 
             <ng-template #preprod>
-                <td class="{{ $hostClass }}__env-cell-first">{{ rowData.prod.preprod_engine }}</td>
-                <td>{{ rowData.prod.preprod_theme }}</td>
-                <td class="{{ $hostClass }}__env-cell-last">{{ rowData.prod.preprod_core }}</td>
+                <td
+                    class="{{ $hostClass }}__env-cell-first"
+                    [ngClass]="{ 'has-tooltip': getTooltip('engine', rowData.prod.preprod_engine) }"
+                    [pTooltip]="getTooltip('engine', rowData.prod.preprod_engine)"
+                >
+                    {{ rowData.prod.preprod_engine }}
+                </td>
+                <td
+                    [ngClass]="{ 'has-tooltip': getTooltip('engine', rowData.prod.preprod_theme) }"
+                    [pTooltip]="getTooltip('engine', rowData.prod.preprod_theme)"
+                >
+                    {{ rowData.prod.preprod_theme }}
+                </td>
+                <td
+                    class="{{ $hostClass }}__env-cell-last"
+                    [ngClass]="{ 'has-tooltip': getTooltip('engine', rowData.prod.preprod_core) }"
+                    [pTooltip]="getTooltip('engine', rowData.prod.preprod_core)"
+                >
+                    {{ rowData.prod.preprod_core }}
+                </td>
             </ng-template>
         </tr>
     </ng-template>

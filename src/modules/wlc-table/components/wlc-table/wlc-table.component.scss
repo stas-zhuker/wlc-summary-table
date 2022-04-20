@@ -62,6 +62,11 @@
                 &-tbody {
                     tr > {
                         td {
+                            &.has-tooltip {
+                                color: #fff;
+                                background-color: var(--red-500);
+                            }
+
                             &:first-child {
                                 background-color: var(--blue-300);
                             }
