@@ -4,7 +4,7 @@ import _forIn from 'lodash-es/forIn';
 import _startsWith from 'lodash-es/startsWith';
 import _has from 'lodash-es/has';
 
-import { IProjectVersions } from 'src/modules/wlc-table/system/interfaces/project.interface';
+import { IProjectVersions } from 'src/modules/versions/system/interfaces/project.interface';
 
 @Injectable({
     providedIn: 'root',

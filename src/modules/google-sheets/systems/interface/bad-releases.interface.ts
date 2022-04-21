@@ -1,4 +1,4 @@
-import { IIndexing } from 'src/modules/wlc-table/system/interfaces/global.interface';
+import { IIndexing } from 'src/modules/core/systems/interfaces/global.interface';
 
 export interface IBadReleases {
     engine: IIndexing<string>;

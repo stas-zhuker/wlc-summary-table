@@ -11,7 +11,7 @@
     selectionMode="multiple"
     [(selection)]="selectedRows"
     stateStorage="local"
-    stateKey="table-state"
+    stateKey="versions-primeNG-state"
 >
     <ng-template pTemplate="header" let-columns>
         <tr class="{{ $hostClass }}__row {{ $hostClass }}__row--first">
@@ -35,7 +35,7 @@
                     selectedItemsLabel="{0} enviroments selected"
                 ></p-multiSelect>
             </th>
-            <th *ngIf="versionsCellWidth()" colspan="15" [style]="{ width: versionsCellWidth() + 'px' }">Versions</th>
+            <th *ngIf="versionsCellWidth" colspan="15" [style]="{ width: versionsCellWidth + 'px' }">Versions</th>
         </tr>
         <tr>
             <th pFrozenColumn>

@@ -10,24 +10,24 @@ import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { TooltipModule } from 'primeng/tooltip';
 
-import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
-import { WlcTableComponent } from 'src/modules/wlc-table/components/wlc-table/wlc-table.component';
-import { VersionsSelectorComponent } from 'src/modules/wlc-table/components/versions-selector/versions-selector.component';
+import { ProjectService } from 'src/modules/versions/system/services/projects.service';
+import { VersionsTableComponent } from 'src/modules/versions/components/versions-table/versions-table.component';
+import { VersionsSelectorComponent } from 'src/modules/versions/components/versions-selector/versions-selector.component';
 
 @NgModule({
-    declarations: [WlcTableComponent, VersionsSelectorComponent],
+    declarations: [VersionsTableComponent, VersionsSelectorComponent],
     imports: [
         CommonModule,
         FormsModule,
+        BrowserAnimationsModule,
         TableModule,
         InputTextModule,
         MultiSelectModule,
-        BrowserAnimationsModule,
         ButtonModule,
         CheckboxModule,
         TooltipModule,
     ],
-    exports: [WlcTableComponent],
+    exports: [VersionsTableComponent],
     providers: [ProjectService],
 })
-export class WlcTableModule {}
+export class VersionsModule {}

@@ -8,18 +8,18 @@ import {
     IProjectVersions,
     IVersionsEnvColumn,
     TDepType,
-} from 'src/modules/wlc-table/system/interfaces/project.interface';
-import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
-import { LocalStorageService } from 'src/modules/wlc-table/system/services/local-storage.service';
+} from 'src/modules/versions/system/interfaces/project.interface';
+import { ProjectService } from 'src/modules/versions/system/services/projects.service';
 import { BadReleasesSheetService } from 'src/modules/google-sheets/systems/servises/bad-releases-sheet.service';
+import { LocalStorageService } from 'src/modules/core/systems/services/local-storage.service';
 
 @Component({
-    selector: 'app-wlc-table',
-    templateUrl: './wlc-table.component.html',
-    styleUrls: ['./wlc-table.component.scss'],
+    selector: 'app-versions-table',
+    templateUrl: './versions-table.component.html',
+    styleUrls: ['./versions-table.component.scss'],
 })
-export class WlcTableComponent implements OnInit {
-    @HostBinding('class') public $hostClass = 'wlc-table';
+export class VersionsTableComponent implements OnInit {
+    @HostBinding('class') public $hostClass = 'versions-table';
 
     @ViewChild('dt') public dt: Table;
 
@@ -66,11 +66,6 @@ export class WlcTableComponent implements OnInit {
     ];
 
     /**
-     * selected rows
-     */
-    public _selectedRows: IProjectVersions[];
-
-    /**
      * screen height to use scrollbar
      */
     public screenHeight: string;
@@ -79,6 +74,16 @@ export class WlcTableComponent implements OnInit {
      * show only selected rows
      */
     public showSelectedRowsOnly: boolean;
+
+    /**
+     * table name for LocalStorageService
+     */
+    private readonly tableMame = 'versions';
+
+    /**
+     * selected rows
+     */
+    private _selectedRows: IProjectVersions[];
 
     /**
      * Set of selected rows title
@@ -95,7 +100,7 @@ export class WlcTableComponent implements OnInit {
         private localStorageService: LocalStorageService,
         private badReleasesSheetService: BadReleasesSheetService
     ) {
-        this._selectedColumns = this.localStorageService.getTableState('custom-table-state').selectedColumns || [];
+        this._selectedColumns = this.localStorageService.getTableState(this.tableMame, 'custom').selectedColumns || [];
     }
 
     /**
@@ -109,12 +114,12 @@ export class WlcTableComponent implements OnInit {
      * set selected columns to display and writing them to the localStorage
      */
     public set selectedColumns(selectedCols: IVersionsEnvColumn[]) {
-        const customTableState = this.localStorageService.getTableState('custom-table-state');
+        const customTableState = this.localStorageService.getTableState(this.tableMame, 'custom');
         // restore original order (from primeNG doc: https://www.primefaces.org/primeng/#/table/coltoggle)
         this._selectedColumns = this.cols.filter((col) => selectedCols.includes(col));
 
         customTableState.selectedColumns = this.selectedColumns;
-        this.localStorageService.setNewTableState(customTableState, 'custom-table-state');
+        this.localStorageService.setNewTableState(customTableState, this.tableMame, 'custom');
     }
 
     /**
@@ -143,7 +148,22 @@ export class WlcTableComponent implements OnInit {
      * get global filter from local storage
      */
     public get globalFilterFromStorage(): string {
-        return this.localStorageService.getTableState('table-state').filters?.global?.value || '';
+        return this.localStorageService.getTableState(this.tableMame, 'primeNG').filters?.global?.value || '';
+    }
+
+    /**
+     * Get varsions cell width
+     *
+     * @returns {number} cell width in px
+     */
+    public get versionsCellWidth(): number {
+        return _reduce(
+            this.selectedColumns,
+            (result, col) => {
+                return result + col.elems * this.defColWidth;
+            },
+            0
+        );
     }
 
     public async ngOnInit(): Promise<void> {
@@ -157,16 +177,19 @@ export class WlcTableComponent implements OnInit {
             this.selectedColumns = this.cols;
         }
 
-        this.showSelectedRowsOnly = this.localStorageService.getTableState('custom-table-state').showSelectedRowsOnly;
+        this.showSelectedRowsOnly = this.localStorageService.getTableState(
+            this.tableMame,
+            'custom'
+        ).showSelectedRowsOnly;
     }
 
     /**
      * change checkbox showSelectedRowsOnly
      */
     public showSelectedRowsChange() {
-        const customTableState = this.localStorageService.getTableState('custom-table-state');
+        const customTableState = this.localStorageService.getTableState(this.tableMame, 'custom');
         customTableState.showSelectedRowsOnly = this.showSelectedRowsOnly;
-        this.localStorageService.setNewTableState(customTableState, 'custom-table-state');
+        this.localStorageService.setNewTableState(customTableState, this.tableMame, 'custom');
     }
 
     /**
@@ -183,38 +206,26 @@ export class WlcTableComponent implements OnInit {
      * Clear selected rows and remove it from localStorage
      */
     public clearSelectedRows(): void {
-        const tableState = this.localStorageService.getTableState('table-state');
+        const tableState = this.localStorageService.getTableState(this.tableMame, 'primeNG');
         delete tableState.selection;
 
-        this.localStorageService.setNewTableState(tableState, 'table-state');
+        this.localStorageService.setNewTableState(tableState, this.tableMame, 'primeNG');
         this.selectedRows = [];
         this.updateSelectRowsTitleSet([]);
-    }
-
-    /**
-     * Get varsions cell width
-     *
-     * @returns {number} cell width in px
-     */
-    public versionsCellWidth(): number {
-        return _reduce(
-            this.selectedColumns,
-            (result, col) => {
-                return result + col.elems * this.defColWidth;
-            },
-            0
-        );
     }
 
     /**
      * Remove table states from localStorage and reload page
      */
     public clearTableStates(): void {
-        this.localStorageService.clearTableStates();
+        this.localStorageService.clearTableStates(this.tableMame);
     }
 
     /**
      * Get tooltip from bad releases table
+     *
+     * @param {TDepType} dep
+     * @param {string} version
      */
     public getTooltip(dep: TDepType, version: string) {
         return this.badReleasesSheetService.badReleases[dep][version] || '';

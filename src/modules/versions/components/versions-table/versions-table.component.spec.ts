@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WlcTableComponent } from './wlc-table.component';
+import { VersionsTableComponent } from './versions-table.component';
 
 describe('WlcTableComponent', () => {
-    let component: WlcTableComponent;
-    let fixture: ComponentFixture<WlcTableComponent>;
+    let component: VersionsTableComponent;
+    let fixture: ComponentFixture<VersionsTableComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [WlcTableComponent],
+            declarations: [VersionsTableComponent],
         }).compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(WlcTableComponent);
+        fixture = TestBed.createComponent(VersionsTableComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

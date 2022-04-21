@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { WlcTableModule } from 'src/modules/wlc-table/wlc-table.module';
+import { DomainsModule } from 'src/modules/domains/domains.module';
+import { VersionsModule } from 'src/modules/versions/versions.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-	declarations: [AppComponent],
-	imports: [BrowserModule, AppRoutingModule, WlcTableModule],
-	providers: [],
-	bootstrap: [AppComponent],
+    declarations: [AppComponent],
+    imports: [BrowserModule, AppRoutingModule, VersionsModule, DomainsModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}

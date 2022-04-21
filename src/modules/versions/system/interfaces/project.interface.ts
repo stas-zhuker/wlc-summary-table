@@ -41,7 +41,7 @@ export type TEnvType = 'qa' | 'test' | 'preprod' | 'prod';
 export type TDepType = 'engine' | 'theme' | 'core' | 'php';
 
 /**
- * Use 'table-state' to PrimeNG table state (type TableState) fields and 'custom-table-state' to custom fields,
+ * Use 'primeNG' to PrimeNG table state (type TableState) fields and 'custom' to custom fields,
  * because when a table updates her fields in localStorage, it doesn't know about custom fields and delete them.
  */
-export type TTableStateType = 'table-state' | 'custom-table-state';
+export type TTableStateType = 'primeNG' | 'custom';

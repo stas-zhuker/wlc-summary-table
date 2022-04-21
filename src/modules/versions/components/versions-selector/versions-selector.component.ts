@@ -9,8 +9,8 @@ import {
     IVersionsListItem,
     TDepType,
     TEnvType,
-} from 'src/modules/wlc-table/system/interfaces/project.interface';
-import { ProjectService } from 'src/modules/wlc-table/system/services/projects.service';
+} from 'src/modules/versions/system/interfaces/project.interface';
+import { ProjectService } from 'src/modules/versions/system/services/projects.service';
 
 @Component({
     selector: 'app-versions-selector',

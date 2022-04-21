@@ -1,22 +1,44 @@
-.wlc-table:host {
-    .wlc-table {
+.domains-table:host {
+    .domains-table {
         &__filters {
             z-index: 2;
             flex-direction: column;
         }
 
-        &__global-search-input {
-            max-width: 240px;
+        &__buttons {
+            display: grid;
+            grid-template-areas: "rows storage" "filter filter" "checkbox checkbox";
         }
 
-        &__env-cell {
-            &-first {
-                border-left-color: var(--text-color);
+        &__btn-clear {
+            &-rows {
+                grid-area: rows;
             }
 
-            &-last {
-                border-right-color: var(--text-color);
+            &-storage {
+                grid-area: storage;
             }
+        }
+
+        &__project {
+            &-filter {
+                grid-area: filter;
+            }
+        }
+
+        &__checkbox {
+            grid-area: checkbox;
+        }
+
+        &__global-search-input {
+            max-width: 220px;
+        }
+
+        &__link {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
 
@@ -24,23 +46,20 @@
         .p-datatable {
             tr th,
             tr td {
+                flex-direction: column;
                 gap: 5px;
                 justify-content: center;
-                width: 110px;
+                width: 240px;
                 text-align: center;
-
-                &:first-child {
-                    width: 250px;
-                }
             }
 
             .p-datatable {
                 &-thead {
-                    .wlc-table {
+                    .domains-table {
                         &__row {
                             &--first {
                                 .p-multiselect {
-                                    max-width: 230px;
+                                    max-width: 220px;
                                 }
                             }
 
