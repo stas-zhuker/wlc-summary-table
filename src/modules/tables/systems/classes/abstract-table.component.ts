@@ -2,6 +2,9 @@ import { Directive, HostListener, OnInit, ViewChild } from '@angular/core';
 
 import { Table } from 'primeng/table';
 import _forEach from 'lodash-es/forEach';
+import _isEqual from 'lodash-es/isEqual';
+import _findIndex from 'lodash-es/findIndex';
+import _filter from 'lodash-es/filter';
 
 import { LocalStorageService } from 'src/modules/core/systems/services';
 import {
@@ -26,9 +29,11 @@ export class AbstractTableComponent implements OnInit {
     public globalFilterFields: string[];
 
     /**
-     * list of columns to enable and disable the display of columns
+     * List of columns to enable and disable the display of columns
+     * Use array of objects to make the search in p-multiSelect work. Example:
+     * 'src/modules/tables/components/domains-table'
      */
-    public cols;
+    public cols: Object[];
 
     /**
      * show only selected rows
@@ -72,8 +77,10 @@ export class AbstractTableComponent implements OnInit {
 
     public set selectedColumns(selectedCols) {
         const customTableState = this.localStorageService.getTableState(this.tableState, 'custom');
-        // restore original order (from primeNG doc: https://www.primefaces.org/primeng/#/table/coltoggle)
-        this._selectedColumns = this.cols.filter((col) => selectedCols.includes(col));
+        //restore original order
+        this._selectedColumns = _filter(this.cols, (col) => {
+            return _findIndex(selectedCols, (selectedCol) => _isEqual(col, selectedCol)) !== -1;
+        });
 
         customTableState.selectedColumns = this.selectedColumns;
 

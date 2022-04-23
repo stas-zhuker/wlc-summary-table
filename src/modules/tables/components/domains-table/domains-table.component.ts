@@ -34,13 +34,13 @@ export class DomainsTableComponent extends AbstractTableComponent implements OnI
     ];
 
     public cols: IDomainsColumn[] = [
-        'prodLink',
-        'affProdLink',
-        'affBackoffice',
-        'testLink',
-        'affTestLink',
-        'qaLink',
-        'mirrors',
+        { value: 'prodLink' },
+        { value: 'affProdLink' },
+        { value: 'affBackoffice' },
+        { value: 'testLink' },
+        { value: 'affTestLink' },
+        { value: 'qaLink' },
+        { value: 'mirrors' },
     ];
 
     /**

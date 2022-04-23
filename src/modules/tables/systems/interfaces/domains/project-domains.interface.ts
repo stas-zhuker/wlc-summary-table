@@ -9,7 +9,7 @@ export interface IProjectDomains {
     mirrors: string[];
 }
 
-export type IDomainsColumn =
+export type TDomainColumnValue =
     | 'prodLink'
     | 'affProdLink'
     | 'affBackoffice'
@@ -17,3 +17,7 @@ export type IDomainsColumn =
     | 'affTestLink'
     | 'qaLink'
     | 'mirrors';
+
+export interface IDomainsColumn {
+    value: TDomainColumnValue;
+}

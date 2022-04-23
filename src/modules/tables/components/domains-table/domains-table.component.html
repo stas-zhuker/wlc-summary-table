@@ -36,6 +36,7 @@
                     placeholder="Choose Columns"
                     [(ngModel)]="selectedColumns"
                     [options]="cols"
+                    optionLabel="value"
                     selectedItemsLabel="{0} Columns selected"
                 ></p-multiSelect>
             </th>
@@ -76,7 +77,7 @@
             </th>
 
             <ng-container *ngFor="let col of columns">
-                <th [style]="{ width: defColWidth + 'px' }">{{ col }}</th>
+                <th [style]="{ width: defColWidth + 'px' }">{{ col.value }}</th>
             </ng-container>
         </tr>
     </ng-template>
@@ -89,15 +90,15 @@
 
             <ng-container *ngFor="let col of columns">
                 <td [style]="{ width: defColWidth + 'px' }">
-                    <ng-container *ngIf="isArray(rowData[col]); else stringValue">
-                        <ng-container *ngFor="let link of rowData[col]">
+                    <ng-container *ngIf="isArray(rowData[col.value]); else stringValue">
+                        <ng-container *ngFor="let link of rowData[col.value]">
                             <a class="{{ $hostClass }}__link" [href]="'https://' + link" target="_blank">{{ link }}</a>
                         </ng-container>
                     </ng-container>
 
                     <ng-template #stringValue>
-                        <a class="{{ $hostClass }}__link" [href]="'https://' + rowData[col]" target="_blank">{{
-                            rowData[col]
+                        <a class="{{ $hostClass }}__link" [href]="'https://' + rowData[col.value]" target="_blank">{{
+                            rowData[col.value]
                         }}</a>
                     </ng-template>
                 </td>
