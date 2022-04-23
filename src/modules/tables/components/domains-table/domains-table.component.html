@@ -1,0 +1,107 @@
+<p-table
+    #dt
+    dataKey="redmineProjectName"
+    [value]="projectsDomains"
+    [columns]="selectedColumns"
+    styleClass="p-datatable-gridlines p-datatable-sm p-datatable-striped"
+    [scrollable]="true"
+    scrollDirection="both"
+    [scrollHeight]="screenHeight"
+    [globalFilterFields]="globalFilterFields"
+    selectionMode="multiple"
+    [(selection)]="selectedRows"
+    stateStorage="local"
+    [stateKey]="tableState + '-primeNG-state'"
+>
+    <ng-template pTemplate="header" let-columns>
+        <tr class="{{ $hostClass }}__row {{ $hostClass }}__row--first">
+            <th
+                pFrozenColumn
+                rowspan="3"
+                class="{{ $hostClass }}__filters"
+                [style]="{ width: defColWidth + 'px' }"
+            >
+                <span class="p-input-icon-left ml-auto">
+                    <i class="pi pi-search"></i>
+                    <input
+                        pInputText
+                        class="{{ $hostClass }}__global-search-input"
+                        type="text"
+                        placeholder="Global search"
+                        [value]="globalFilterFromStorage"
+                        (input)="applyFilterGlobal($event, 'contains')"
+                    />
+                </span>
+                <p-multiSelect
+                    placeholder="Choose Columns"
+                    [(ngModel)]="selectedColumns"
+                    [options]="cols"
+                    selectedItemsLabel="{0} Columns selected"
+                ></p-multiSelect>
+            </th>
+            <th *ngIf="tableNameCellWidth" colspan="15" [style]="{ width: tableNameCellWidth + 'px' }">
+                {{ tableName }}
+            </th>
+        </tr>
+        <tr>
+            <th pFrozenColumn class="{{ $hostClass }}__buttons" [style]="{ width: defColWidth + 'px' }">
+                <p-button
+                    class="{{ $hostClass }}__btn-clear-rows"
+                    label="Rows"
+                    icon="pi pi-trash"
+                    (click)="clearSelectedRows()"
+                ></p-button>
+                <p-button
+                    class="{{ $hostClass }}__btn-clear-storage"
+                    label="Storage"
+                    icon="pi pi-trash"
+                    (click)="clearTableStates()"
+                ></p-button>
+
+                <p-columnFilter
+                    class="{{ $hostClass }}__project-filter"
+                    type="text"
+                    placeholder="Project search"
+                    field="redmineProjectName"
+                    matchMode="contains"
+                    [showMenu]="false"
+                ></p-columnFilter>
+                <p-checkbox
+                    class="{{ $hostClass }}__checkbox"
+                    label="Show selected rows only"
+                    [(ngModel)]="showSelectedRowsOnly"
+                    [binary]="true"
+                    (onChange)="showSelectedRowsChange()"
+                ></p-checkbox>
+            </th>
+
+            <ng-container *ngFor="let col of columns">
+                <th [style]="{ width: defColWidth + 'px' }">{{ col }}</th>
+            </ng-container>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr
+            *ngIf="!showSelectedRowsOnly || selectedRowsTitlesSet.has(rowData.redmineProjectName)"
+            [pSelectableRow]="rowData"
+        >
+            <td pFrozenColumn [style]="{ width: defColWidth + 'px' }">{{ rowData.redmineProjectName }}</td>
+
+            <ng-container *ngFor="let col of columns">
+                <td [style]="{ width: defColWidth + 'px' }">
+                    <ng-container *ngIf="isArray(rowData[col]); else stringValue">
+                        <ng-container *ngFor="let link of rowData[col]">
+                            <a class="{{ $hostClass }}__link" [href]="'https://' + link" target="_blank">{{ link }}</a>
+                        </ng-container>
+                    </ng-container>
+
+                    <ng-template #stringValue>
+                        <a class="{{ $hostClass }}__link" [href]="'https://' + rowData[col]" target="_blank">{{
+                            rowData[col]
+                        }}</a>
+                    </ng-template>
+                </td>
+            </ng-container>
+        </tr>
+    </ng-template>
+</p-table>

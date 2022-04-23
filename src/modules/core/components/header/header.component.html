@@ -1,0 +1,18 @@
+<ng-container *ngFor="let link of linksList">
+    <ng-container *ngIf="link.tableFrom === 'app'; else google">
+        <a
+            class="{{ $hostClass }}__link p-link"
+            routerLinkActive="{{ $hostClass }}__active-route"
+            [routerLink]="link.tableLink"
+            [target]="link.linkTarget || '_self'"
+        >
+            {{ link.tableName }}
+        </a>
+    </ng-container>
+
+    <ng-template #google>
+        <a class="{{ $hostClass }}__link p-link" [href]="link.tableLink" [target]="link.linkTarget || '_self'">
+            {{ link.tableName }}
+        </a>
+    </ng-template>
+</ng-container>
