@@ -1,0 +1,88 @@
+.versions-table:host {
+    .versions-table {
+        &__filters {
+            z-index: 2;
+            flex-direction: column;
+        }
+
+        &__global-search-input {
+            max-width: 240px;
+        }
+
+        &__env-cell {
+            &-first {
+                border-left-color: var(--text-color);
+            }
+
+            &-last {
+                border-right-color: var(--text-color);
+            }
+        }
+    }
+
+    ::ng-deep {
+        .p-datatable {
+            tr th,
+            tr td {
+                gap: 5px;
+                justify-content: center;
+                width: 110px;
+                text-align: center;
+
+                &:first-child {
+                    width: 250px;
+                }
+            }
+
+            .p-datatable {
+                &-thead {
+                    .versions-table {
+                        &__row {
+                            &--first {
+                                .p-multiselect {
+                                    max-width: 230px;
+                                }
+                            }
+
+                            &--project-search {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+
+                    .p-multiselect-panel {
+                        min-width: 200px;
+                    }
+
+                    > tr {
+                        background-color: var(--green-300);
+
+                        > th {
+                            background-color: var(--green-300);
+                        }
+                    }
+                }
+
+                &-tbody {
+                    tr {
+                        &.p-highlight {
+                            color: var(--text-color);
+                            background-color: var(--yellow-300);
+                        }
+
+                        > td {
+                            &.has-tooltip {
+                                color: #fff;
+                                background-color: var(--red-500);
+                            }
+
+                            &:first-child {
+                                background-color: var(--blue-300);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

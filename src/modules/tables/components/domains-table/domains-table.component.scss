@@ -1,0 +1,106 @@
+.domains-table:host {
+    .domains-table {
+        &__filters {
+            z-index: 2;
+            flex-direction: column;
+        }
+
+        &__buttons {
+            display: grid;
+            grid-template-areas: "rows storage" "filter filter" "checkbox checkbox";
+        }
+
+        &__btn-clear {
+            &-rows {
+                grid-area: rows;
+            }
+
+            &-storage {
+                grid-area: storage;
+            }
+        }
+
+        &__project {
+            &-filter {
+                grid-area: filter;
+            }
+        }
+
+        &__checkbox {
+            grid-area: checkbox;
+        }
+
+        &__global-search-input {
+            max-width: 220px;
+        }
+
+        &__link {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    ::ng-deep {
+        .p-datatable {
+            tr th,
+            tr td {
+                flex-direction: column;
+                gap: 5px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .p-datatable {
+                &-thead {
+                    .domains-table {
+                        &__row {
+                            &--first {
+                                .p-multiselect {
+                                    max-width: 220px;
+                                }
+                            }
+
+                            &--project-search {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+
+                    .p-multiselect-panel {
+                        min-width: 200px;
+                    }
+
+                    > tr {
+                        background-color: var(--green-300);
+
+                        > th {
+                            background-color: var(--green-300);
+                        }
+                    }
+                }
+
+                &-tbody {
+                    tr {
+                        &.p-highlight {
+                            color: var(--text-color);
+                            background-color: var(--yellow-300);
+                        }
+
+                        > td {
+                            &.has-tooltip {
+                                color: #fff;
+                                background-color: var(--red-500);
+                            }
+
+                            &:first-child {
+                                background-color: var(--blue-300);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

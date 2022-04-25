@@ -1,0 +1,26 @@
+.header:host {
+    display: flex;
+    gap: 5px;
+    height: 50px;
+    background-color: var(--teal-200);
+
+    .header {
+        &__link {
+            padding: 10px;
+            color: var(--text-color);
+            text-decoration: none;
+
+            &:hover {
+                background-color: var(--yellow-50);
+            }
+        }
+
+        &__active-route {
+            background-color: var(--yellow-300);
+
+            &:hover {
+                background-color: var(--yellow-300);
+            }
+        }
+    }
+}
